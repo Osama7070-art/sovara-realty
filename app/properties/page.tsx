@@ -1,0 +1,3 @@
+import PropertyCard from "../../components/PropertyCard";
+import { properties } from "../../data/properties";
+export default function Properties(){return <><section className="page-hero"><div className="container"><div className="eyebrow">SOVARA REALTY</div><h1>Properties</h1><p className="muted">Selected opportunities. Verified information will be added before public listing.</p></div></section><section className="section"><div className="container"><div className="grid">{properties.map(p=><PropertyCard key={p.id} property={p}/>)}</div></div></section></>}
