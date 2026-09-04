@@ -39,6 +39,7 @@ export default function Navbar() {
               zIndex: 100,
             }}
           >
+            <Link href="/">Home</Link>
             <Link href="/properties">Properties</Link>
             <Link href="/brokers">For Brokers</Link>
             <Link href="/list-your-property">List Property</Link>
