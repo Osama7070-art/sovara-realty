@@ -9,6 +9,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="nav-links">
+          <Link href="/">Home</Link>
           <Link href="/properties">Properties</Link>
           <Link href="/brokers">For Brokers</Link>
           <Link href="/list-your-property">List Property</Link>
