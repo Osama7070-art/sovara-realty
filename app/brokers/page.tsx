@@ -30,7 +30,7 @@ export default function Brokers() {
 
             <form
               className="form"
-              action="https://forms.gle/5pQzThUogcXRooJa8“
+              action="https://forms.gle/5pQzThUogcXRooJa8"
               method="get"
               target="_blank"
             >
