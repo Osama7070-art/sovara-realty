@@ -18,7 +18,36 @@ export default function Home() {
     <div className="eyebrow">Find Your Property</div>
     <h2 className="serif">Discover the Right Opportunity</h2>
 
-    <div className="property-search">
+    <form className="property-search" action="/properties" method="GET">
+  <select name="location" defaultValue="">
+    <option value="">Location</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Noida">Noida</option>
+    <option value="Gurugram">Gurugram</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Bengaluru">Bengaluru</option>
+  </select>
+
+  <select name="type" defaultValue="">
+    <option value="">Property Type</option>
+    <option value="Apartment">Apartment</option>
+    <option value="Villa">Villa</option>
+    <option value="Plot">Plot</option>
+    <option value="Commercial">Commercial</option>
+  </select>
+
+  <select name="budget" defaultValue="">
+    <option value="">Budget</option>
+    <option value="under-50">Under ₹50 Lakh</option>
+    <option value="50-100">₹50 Lakh – ₹1 Cr</option>
+    <option value="100-200">₹1 Cr – ₹2 Cr</option>
+    <option value="200-plus">₹2 Cr+</option>
+  </select>
+
+  <button className="btn" type="submit">
+    Search Properties
+  </button>
+</form>
       <select>
         <option>Location</option>
         <option>Delhi</option>
