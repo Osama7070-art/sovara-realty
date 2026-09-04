@@ -1,5 +1,5 @@
 export type Property = {
-  id: string; name: string; location: string; configuration: string;
+  id: string; name: string; location: string; configuration: string; propertyType?: string; priceValue?: number;
   area: string; price: string; status: string; image: string;
   developer: string; description: string; amenities: string[];
 };
