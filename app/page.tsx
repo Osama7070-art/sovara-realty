@@ -48,34 +48,7 @@ export default function Home() {
     Search Properties
   </button>
 </form>
-      <select>
-        <option>Location</option>
-        <option>Delhi</option>
-        <option>Noida</option>
-        <option>Gurugram</option>
-        <option>Mumbai</option>
-        <option>Bengaluru</option>
-      </select>
-
-      <select>
-        <option>Property Type</option>
-        <option>Apartment</option>
-        <option>Villa</option>
-        <option>Plot</option>
-        <option>Commercial</option>
-      </select>
-
-      <select>
-        <option>Budget</option>
-        <option>Under ₹50 Lakh</option>
-        <option>₹50 Lakh – ₹1 Cr</option>
-        <option>₹1 Cr – ₹2 Cr</option>
-        <option>₹2 Cr+</option>
-      </select>
-
-      <Link className="btn" href="/properties">
-        Search Properties
-      </Link>
+      
     </div>
   </div>
 </section>
