@@ -1,76 +1,40 @@
-export default function ListProperty() {
-  return (
-    <>
-      <section className="page-hero">
-        <div className="container">
-          <div className="eyebrow">Developers & Property Owners</div>
-          <h1>Have a Property to Sell?</h1>
-          <p className="muted">
-            Share the details with SOVARA. Every submission is reviewed before
-            public listing.
-          </p>
-        </div>
-      </section>
+"use client";
 
-      <section className="section">
-        <div className="container">
-          <form
-            className="form"
-            action="https://forms.gle/BYqPK1JdtN8cbXLx5"
-            method="get"
-            target="_blank"
-          >
-            <input
-              name="name"
-              placeholder="Name"
-              required
-            />
+import { FormEvent, useState } from "react";
 
-            <input
-              name="company"
-              placeholder="Company / Developer Name"
-            />
+export default function ListYourProperty() {
+  const [submitted, setSubmitted] = useState(false);
 
-            <input
-              name="phone"
-              placeholder="Phone"
-              required
-            />
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
 
-            <input
-              name="email"
-              placeholder="Email"
-              type="email"
-            />
+    const form = event.currentTarget;
 
-            <input
-              name="property"
-              placeholder="Property / Project Name"
-              required
-            />
+    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+    const company = (
+      form.elements.namedItem("company") as HTMLInputElement
+    ).value;
+    const phone = (form.elements.namedItem("phone") as HTMLInputElement).value;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const property = (
+      form.elements.namedItem("property") as HTMLInputElement
+    ).value;
+    const location = (
+      form.elements.namedItem("location") as HTMLInputElement
+    ).value;
+    const type = (form.elements.namedItem("type") as HTMLInputElement).value;
+    const message = (
+      form.elements.namedItem("message") as HTMLTextAreaElement
+    ).value;
 
-            <input
-              name="location"
-              placeholder="Location"
-              required
-            />
+    const googleForm = document.createElement("form");
 
-            <input
-              name="type"
-              placeholder="Property Type"
-            />
+    googleForm.method = "POST";
+    googleForm.action =
+      "https://docs.google.com/forms/d/e/1FAIpQLScpz1aPlziClINzFcBniJeSbBK7OWm3Wyed5HfgKrKwRIdHzA/formResponse";
+    googleForm.target = "google-property-submit";
+    googleForm.style.display = "none";
 
-            <textarea
-              name="message"
-              placeholder="Message / Property Details"
-            />
-
-            <button className="btn dark" type="submit">
-              Submit Property
-            </button>
-          </form>
-        </div>
-      </section>
-    </>
-  );
-}
+    const fields = [
+      ["entry.1368347809", name],
+      ["entry.1759221085
