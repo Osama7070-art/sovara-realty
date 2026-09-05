@@ -1541,3 +1541,312 @@
     font-size: 58px;
   }
 }
+/* =========================================================
+   SOVARA — PREMIUM PROPERTY LISTING PAGE
+   ========================================================= */
+
+.listing-page-hero {
+  padding: 95px 0 90px;
+  border-bottom: 1px solid #d9d7d0;
+}
+
+.listing-page-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.listing-page-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(60px, 9vw, 120px);
+  line-height: .86;
+  font-weight: 400;
+  letter-spacing: -.055em;
+}
+
+.listing-page-hero p {
+  max-width: 440px;
+  margin: 45px 0 0 auto;
+  color: #626262;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+
+/* INTRO */
+
+.listing-intro {
+  padding: 105px 0 120px;
+}
+
+.listing-intro-grid {
+  display: grid;
+  grid-template-columns: .7fr 1.3fr;
+  gap: 50px;
+}
+
+.listing-intro h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: .94;
+  font-weight: 400;
+  letter-spacing: -.045em;
+}
+
+.listing-intro p {
+  max-width: 480px;
+  margin: 40px 0 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* APPLICATION */
+
+.listing-application {
+  padding: 110px 0;
+  background: #eeece6;
+}
+
+.listing-application-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.listing-application-copy h2 {
+  margin: 35px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 7vw, 88px);
+  line-height: .88;
+  font-weight: 400;
+  letter-spacing: -.05em;
+}
+
+.listing-application-copy > p {
+  max-width: 390px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.listing-note {
+  display: flex;
+  gap: 18px;
+  max-width: 390px;
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #c9c7c0;
+}
+
+.listing-note span {
+  color: #888;
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+
+.listing-note p {
+  margin: 0;
+  color: #666;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.listing-form-wrap {
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.listing-form {
+  margin-top: 20px;
+}
+
+.listing-field {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  align-items: center;
+  border-bottom: 1px solid #bdbbb5;
+}
+
+.listing-field > span {
+  color: #888;
+  font-size: 9px;
+  letter-spacing: .1em;
+}
+
+.listing-field input,
+.listing-field textarea {
+  width: 100%;
+  padding: 19px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #171717;
+  font-size: 13px;
+}
+
+.listing-field input:focus,
+.listing-field textarea:focus {
+  outline: none;
+}
+
+.listing-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.listing-field-message {
+  align-items: start;
+}
+
+.listing-field-message > span {
+  padding-top: 21px;
+}
+
+.listing-submit {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding: 19px 20px;
+}
+
+.listing-submit span {
+  font-size: 16px;
+}
+
+
+/* SUCCESS */
+
+.listing-success {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.listing-success h1 {
+  margin: 25px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(60px, 8vw, 105px);
+  line-height: .88;
+  font-weight: 400;
+  letter-spacing: -.05em;
+}
+
+.listing-success p {
+  max-width: 500px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* CLOSING */
+
+.listing-closing {
+  padding: 110px 0 125px;
+  background: #171717;
+  color: #f7f6f2;
+}
+
+.listing-closing .eyebrow {
+  color: #aaa;
+}
+
+.listing-closing h2 {
+  margin: 45px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: .95;
+  font-weight: 400;
+  letter-spacing: -.045em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  .listing-page-hero {
+    padding: 60px 0 55px;
+  }
+
+  .listing-page-label {
+    margin-bottom: 40px;
+  }
+
+  .listing-page-label span:last-child {
+    max-width: 180px;
+    text-align: right;
+  }
+
+  .listing-page-hero h1 {
+    font-size: 61px;
+  }
+
+  .listing-page-hero p {
+    margin: 35px 0 0;
+  }
+
+  .listing-intro {
+    padding: 70px 0 75px;
+  }
+
+  .listing-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .listing-intro h2 {
+    font-size: 48px;
+  }
+
+  .listing-application {
+    padding: 70px 0;
+  }
+
+  .listing-application-grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .listing-application-copy h2 {
+    font-size: 58px;
+  }
+
+  .listing-form-wrap {
+    margin: 0;
+  }
+
+  .listing-field {
+    grid-template-columns: 28px 1fr;
+  }
+
+  .listing-closing {
+    padding: 75px 0 85px;
+  }
+
+  .listing-closing h2 {
+    margin-top: 35px;
+    font-size: 46px;
+  }
+
+  .listing-success {
+    min-height: 65vh;
+    padding: 75px 0;
+  }
+
+  .listing-success h1 {
+    font-size: 61px;
+  }
+}
