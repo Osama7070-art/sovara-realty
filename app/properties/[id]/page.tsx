@@ -11,6 +11,15 @@ export default async function PropertyDetail({
 
   if (!property) notFound();
 
+  // Demo properties remain visible for website presentation.
+  // Real properties require both ACTIVE listing status and VERIFIED information.
+  const isPublic =
+    property.status === "DEMO PROPERTY" ||
+    (property.listingStatus === "ACTIVE" &&
+      property.verificationStatus === "VERIFIED");
+
+  if (!isPublic) notFound();
+
   return (
     <>
       {/* PROPERTY INTRO */}
