@@ -57,32 +57,75 @@ export default function Properties() {
 
   return (
     <>
-      <section className="page-hero">
+      <section className="properties-page-hero">
         <div className="container">
-          <div className="eyebrow">SOVARA REALTY</div>
+          <div className="properties-page-label">
+            <span>01</span>
+            <span>SOVARA REALTY</span>
+          </div>
 
-          <h1>Properties</h1>
+          <h1>Selected<br />Properties.</h1>
 
-          <p className="muted">
-            Selected opportunities. Verified information will be added before
-            public listing.
-          </p>
+          <div className="properties-page-intro">
+            <p>
+              A considered selection of property opportunities.
+              Verified information will be added before public listing.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="properties-list-section">
         <div className="container">
+
+          <div className="properties-list-header">
+            <div>
+              <div className="eyebrow">CURRENT SELECTION</div>
+              <h2>Explore Properties</h2>
+            </div>
+
+            <div className="properties-count">
+              {filteredProperties.length.toString().padStart(2, "0")}{" "}
+              PROPERTIES
+            </div>
+          </div>
+
           {filteredProperties.length > 0 ? (
-            <div className="grid">
-              {filteredProperties.map((p) => (
-                <PropertyCard key={p.id} property={p} />
+            <div className="properties-premium-grid">
+              {filteredProperties.map((property) => (
+                <PropertyCard
+                  key={property.id}
+                  property={property}
+                />
               ))}
             </div>
           ) : (
-            <p className="muted">
-              No verified properties currently match your selected criteria.
-            </p>
+            <div className="properties-empty">
+              <div className="properties-empty-number">00</div>
+
+              <h3>No matching properties.</h3>
+
+              <p>
+                No verified properties currently match your
+                selected criteria.
+              </p>
+            </div>
           )}
+
+        </div>
+      </section>
+
+      <section className="properties-closing">
+        <div className="container">
+          <div className="eyebrow">SOVARA REALTY</div>
+
+          <h2>
+            The right property
+            <br />
+            begins with the right
+            <br />
+            connection.
+          </h2>
         </div>
       </section>
     </>
