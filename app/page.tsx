@@ -16,7 +16,7 @@ export default function Home() {
     <section className="section">
   <div className="container">
     <div className="eyebrow">Find Your Property</div>
-    <h2 className="serif">Discover the Right Opportunity</h2>
+    <h2 className="serif">Discover the Right Opportunity.</h2>
 
     <form className="property-search" action="/properties" method="GET">
   <select name="location" defaultValue="">
