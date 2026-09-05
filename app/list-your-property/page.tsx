@@ -137,5 +137,162 @@ export default function ListYourProperty() {
             </h2>
 
             <p>
-          
-             
+              SOVARA works with developers and property
+              owners to present selected opportunities
+              through an independent broker network.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* SUBMISSION */}
+      <section className="listing-application">
+        <div className="container listing-application-grid">
+
+          <div className="listing-application-copy">
+            <div className="eyebrow">PROPERTY SUBMISSION</div>
+
+            <h2>
+              Tell us
+              <br />
+              about the
+              <br />
+              property.
+            </h2>
+
+            <p>
+              Provide the basic details below. Our team
+              will review the information before any public
+              listing decision is made.
+            </p>
+
+            <div className="listing-note">
+              <span>01</span>
+              <p>
+                Submission does not automatically mean
+                public listing.
+              </p>
+            </div>
+
+            <div className="listing-note">
+              <span>02</span>
+              <p>
+                Property information will be verified
+                before publication.
+              </p>
+            </div>
+          </div>
+
+          <div className="listing-form-wrap">
+
+            <form
+              className="form listing-form"
+              onSubmit={handleSubmit}
+            >
+
+              <div className="listing-field">
+                <span>01</span>
+                <input
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+
+              <div className="listing-field">
+                <span>02</span>
+                <input
+                  name="company"
+                  placeholder="Company / Developer Name"
+                  required
+                />
+              </div>
+
+              <div className="listing-field">
+                <span>03</span>
+                <input
+                  name="phone"
+                  placeholder="Phone"
+                  required
+                />
+              </div>
+
+              <div className="listing-field">
+                <span>04</span>
+                <input
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  required
+                />
+              </div>
+
+              <div className="listing-field">
+                <span>05</span>
+                <input
+                  name="property"
+                  placeholder="Property / Project Name"
+                  required
+                />
+              </div>
+
+              <div className="listing-field">
+                <span>06</span>
+                <input
+                  name="location"
+                  placeholder="Location"
+                  required
+                />
+              </div>
+
+              <div className="listing-field">
+                <span>07</span>
+                <input
+                  name="type"
+                  placeholder="Property Type"
+                  required
+                />
+              </div>
+
+              <div className="listing-field listing-field-message">
+                <span>08</span>
+                <textarea
+                  name="message"
+                  placeholder="Message / Property Details"
+                  rows={6}
+                  required
+                />
+              </div>
+
+              <button
+                className="btn dark listing-submit"
+                type="submit"
+              >
+                Submit Property
+                <span>↗</span>
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+      </section>
+
+      {/* CLOSING */}
+      <section className="listing-closing">
+        <div className="container">
+
+          <div className="eyebrow">SOVARA REALTY</div>
+
+          <h2>
+            Selected properties.
+            <br />
+            Trusted connections.
+          </h2>
+
+        </div>
+      </section>
+    </>
+  );
+}
