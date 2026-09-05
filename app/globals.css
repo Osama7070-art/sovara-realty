@@ -2644,3 +2644,38 @@
     letter-spacing: 0.15em;
   }
 }
+/* SOVARA — Final Logo Refinement */
+.sovara-logo-mark {
+  color: #b9965a !important;
+  width: 36px;
+  height: 36px;
+}
+
+.sovara-wordmark {
+  color: #171717 !important;
+  font-size: 18px;
+  letter-spacing: 0.20em;
+  font-weight: 500;
+}
+
+.sovara-wordmark > span {
+  color: #777 !important;
+  font-size: 8px;
+  letter-spacing: 0.16em;
+}
+
+@media (max-width: 760px) {
+  .sovara-logo-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .sovara-wordmark {
+    font-size: 16px;
+    letter-spacing: 0.18em;
+  }
+
+  .sovara-wordmark > span {
+    font-size: 7px;
+  }
+}
