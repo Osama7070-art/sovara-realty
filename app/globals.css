@@ -2575,3 +2575,72 @@
     font-size: 61px;
   }
 }
+/* SOVARA REALTY — Premium Logo */
+.premium-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #171717;
+  font-size: inherit;
+  letter-spacing: normal;
+}
+
+.sovara-logo-mark {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b9965a;
+  flex-shrink: 0;
+}
+
+.sovara-mark {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sovara-wordmark {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  color: #171717;
+}
+
+.sovara-wordmark > span {
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  color: #777;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .premium-logo {
+    gap: 8px;
+  }
+
+  .sovara-logo-mark {
+    width: 29px;
+    height: 29px;
+  }
+
+  .sovara-wordmark {
+    font-size: 15px;
+    letter-spacing: 0.19em;
+    gap: 6px;
+  }
+
+  .sovara-wordmark > span {
+    font-size: 7px;
+    letter-spacing: 0.15em;
+  }
+}
