@@ -14,19 +14,29 @@ export default function Properties() {
     const type = params.get("type") || "";
     const budget = params.get("budget") || "";
 
+    const hasFilters = location || type || budget;
+
     const filtered = properties.filter((property) => {
+      if (!hasFilters) return true;
+
       const locationMatch =
         !location ||
-        property.location?.toLowerCase().includes(location.toLowerCase());
+        (property.location &&
+          property.location !== "[PLACEHOLDER — TO BE PROVIDED]" &&
+          property.location.toLowerCase().includes(location.toLowerCase()));
 
       const typeMatch =
         !type ||
-        property.propertyType?.toLowerCase() === type.toLowerCase();
+        (property.propertyType &&
+          property.propertyType !== "[PLACEHOLDER — TO BE PROVIDED]" &&
+          property.propertyType.toLowerCase() === type.toLowerCase());
 
-      let budgetMatch = true;
+      let budgetMatch = !budget;
 
-      if (budget && property.priceValue) {
-        if (budget === "under-50") {
+      if (budget) {
+        if (typeof property.priceValue !== "number") {
+          budgetMatch = false;
+        } else if (budget === "under-50") {
           budgetMatch = property.priceValue < 50;
         } else if (budget === "50-100") {
           budgetMatch =
@@ -50,7 +60,9 @@ export default function Properties() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">SOVARA REALTY</div>
+
           <h1>Properties</h1>
+
           <p className="muted">
             Selected opportunities. Verified information will be added before
             public listing.
