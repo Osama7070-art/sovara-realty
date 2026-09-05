@@ -137,6 +137,5 @@ export default function ListYourProperty() {
             </h2>
 
             <p>
-              SOVARA works with developers and property
-              owners to present selected opportunities
+          
              
