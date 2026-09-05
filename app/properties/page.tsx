@@ -5,7 +5,14 @@ import PropertyCard from "../../components/PropertyCard";
 import { properties } from "../../data/properties";
 
 export default function Properties() {
-  const [filteredProperties, setFilteredProperties] = useState(properties);
+  const [filteredProperties, setFilteredProperties] = useState(
+    properties.filter(
+      (property) =>
+        property.status === "DEMO PROPERTY" ||
+        (property.listingStatus === "ACTIVE" &&
+          property.verificationStatus === "VERIFIED")
+    )
+  );
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -16,14 +23,23 @@ export default function Properties() {
 
     const hasFilters = location || type || budget;
 
-    const filtered = properties.filter((property) => {
+    const publicProperties = properties.filter(
+      (property) =>
+        property.status === "DEMO PROPERTY" ||
+        (property.listingStatus === "ACTIVE" &&
+          property.verificationStatus === "VERIFIED")
+    );
+
+    const filtered = publicProperties.filter((property) => {
       if (!hasFilters) return true;
 
       const locationMatch =
         !location ||
         (property.location &&
           property.location !== "[PLACEHOLDER — TO BE PROVIDED]" &&
-          property.location.toLowerCase().includes(location.toLowerCase()));
+          property.location
+            .toLowerCase()
+            .includes(location.toLowerCase()));
 
       const typeMatch =
         !type ||
@@ -64,7 +80,11 @@ export default function Properties() {
             <span>SOVARA REALTY</span>
           </div>
 
-          <h1>Selected<br />Properties.</h1>
+          <h1>
+            Selected
+            <br />
+            Properties.
+          </h1>
 
           <div className="properties-page-intro">
             <p>
@@ -77,7 +97,6 @@ export default function Properties() {
 
       <section className="properties-list-section">
         <div className="container">
-
           <div className="properties-list-header">
             <div>
               <div className="eyebrow">CURRENT SELECTION</div>
@@ -85,7 +104,9 @@ export default function Properties() {
             </div>
 
             <div className="properties-count">
-              {filteredProperties.length.toString().padStart(2, "0")}{" "}
+              {filteredProperties.length
+                .toString()
+                .padStart(2, "0")}{" "}
               PROPERTIES
             </div>
           </div>
@@ -111,7 +132,6 @@ export default function Properties() {
               </p>
             </div>
           )}
-
         </div>
       </section>
 
