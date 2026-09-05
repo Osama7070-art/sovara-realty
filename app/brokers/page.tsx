@@ -57,13 +57,20 @@ export default function Brokers() {
 
   if (submitted) {
     return (
-      <section className="page-hero">
+      <section className="broker-success">
         <div className="container">
           <div className="eyebrow">SOVARA REALTY</div>
-          <h1 className="serif">Application Received.</h1>
-          <p className="muted">
-            Thank you for your interest in partnering with SOVARA. Our team
-            will review your application and get in touch with you.
+
+          <h1>
+            Application
+            <br />
+            Received.
+          </h1>
+
+          <p>
+            Thank you for your interest in partnering with SOVARA.
+            Our team will review your application and get in touch
+            with you.
           </p>
         </div>
       </section>
@@ -78,34 +85,126 @@ export default function Brokers() {
         title="Broker application submission"
       />
 
-      <section className="page-hero">
+      {/* HERO */}
+      <section className="broker-page-hero">
         <div className="container">
-          <div className="eyebrow">For Brokers</div>
-          <h1>Build Your Real Estate Business With SOVARA</h1>
-          <p className="muted">
-            A simple, transparent partnership model for independent brokers.
+
+          <div className="broker-page-label">
+            <span>02</span>
+            <span>FOR BROKERS</span>
+          </div>
+
+          <h1>
+            Build Your Real Estate
+            <br />
+            Business With SOVARA.
+          </h1>
+
+          <p>
+            A focused partnership for independent brokers
+            looking to access selected property opportunities
+            and build trusted client relationships.
           </p>
+
         </div>
       </section>
 
-      <section className="section">
-        <div className="container two-col">
-          <div>
-            <h2 className="serif">How it works</h2>
+      {/* HOW IT WORKS */}
+      <section className="broker-process">
+        <div className="container">
 
-            <ul className="list">
-              <li>01 — Join the SOVARA broker network</li>
-              <li>02 — Access selected properties</li>
-              <li>03 — Bring your clients</li>
-              <li>04 — SOVARA supervises the transaction</li>
-              <li>05 — Successful deal — agreed commission</li>
-            </ul>
+          <div className="broker-section-heading">
+            <div className="eyebrow">THE PARTNERSHIP</div>
+
+            <h2>
+              Simple.
+              <br />
+              Transparent.
+              <br />
+              Professional.
+            </h2>
           </div>
 
-          <div>
-            <h2 className="serif">Partner With Us</h2>
+          <div className="broker-steps">
 
-            <form className="form" onSubmit={handleSubmit}>
+            <div className="broker-step">
+              <span>01</span>
+              <h3>Join</h3>
+              <p>
+                Apply to become part of the SOVARA
+                independent broker network.
+              </p>
+            </div>
+
+            <div className="broker-step">
+              <span>02</span>
+              <h3>Access</h3>
+              <p>
+                Receive access to selected property
+                opportunities available through SOVARA.
+              </p>
+            </div>
+
+            <div className="broker-step">
+              <span>03</span>
+              <h3>Connect</h3>
+              <p>
+                Bring your clients and introduce them
+                to suitable property opportunities.
+              </p>
+            </div>
+
+            <div className="broker-step">
+              <span>04</span>
+              <h3>Transact</h3>
+              <p>
+                SOVARA supervises the transaction and
+                coordinates the process.
+              </p>
+            </div>
+
+            <div className="broker-step">
+              <span>05</span>
+              <h3>Earn</h3>
+              <p>
+                On a successful deal, receive the
+                agreed commission.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* APPLICATION */}
+      <section className="broker-application">
+        <div className="container broker-application-grid">
+
+          <div className="broker-application-copy">
+            <div className="eyebrow">BECOME A PARTNER</div>
+
+            <h2>
+              Bring your
+              <br />
+              clients.
+              <br />
+              Build with
+              <br />
+              SOVARA.
+            </h2>
+
+            <p>
+              Tell us a little about your real-estate
+              experience and the market you operate in.
+            </p>
+          </div>
+
+          <div className="broker-form-wrap">
+
+            <div className="eyebrow">BROKER APPLICATION</div>
+
+            <form className="form broker-form" onSubmit={handleSubmit}>
+
               <input
                 name="name"
                 placeholder="Full Name"
@@ -131,19 +230,27 @@ export default function Brokers() {
                 required
               />
 
-              <select name="experience" required defaultValue="">
+              <select
+                name="experience"
+                required
+                defaultValue=""
+              >
                 <option value="" disabled>
                   Experience in Real Estate
                 </option>
+
                 <option value="Less than 1 Year">
                   Less than 1 Year
                 </option>
+
                 <option value="1–3 Years">
                   1–3 Years
                 </option>
+
                 <option value="3–5 Years">
                   3–5 Years
                 </option>
+
                 <option value="5+ Years">
                   5+ Years
                 </option>
@@ -156,11 +263,34 @@ export default function Brokers() {
                 required
               />
 
-              <button className="btn dark" type="submit">
+              <button
+                className="btn dark broker-submit"
+                type="submit"
+              >
                 Apply as Broker
+                <span>↗</span>
               </button>
+
             </form>
+
           </div>
+        </div>
+      </section>
+
+      {/* CLOSING */}
+      <section className="broker-closing">
+        <div className="container">
+
+          <div className="eyebrow">SOVARA REALTY</div>
+
+          <h2>
+            Better properties.
+            <br />
+            Better connections.
+            <br />
+            Better business.
+          </h2>
+
         </div>
       </section>
     </>
