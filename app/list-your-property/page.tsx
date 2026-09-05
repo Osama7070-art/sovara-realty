@@ -65,13 +65,20 @@ export default function ListYourProperty() {
 
   if (submitted) {
     return (
-      <section className="page-hero">
+      <section className="listing-success">
         <div className="container">
           <div className="eyebrow">SOVARA REALTY</div>
-          <h1 className="serif">Submission Received.</h1>
-          <p className="muted">
-            Thank you for sharing your property details. Our team will review
-            the submission and get in touch with you.
+
+          <h1>
+            Submission
+            <br />
+            Received.
+          </h1>
+
+          <p>
+            Thank you for sharing your property details.
+            Our team will review the submission and get in
+            touch with you.
           </p>
         </div>
       </section>
@@ -86,76 +93,50 @@ export default function ListYourProperty() {
         title="Property submission"
       />
 
-      <section className="page-hero">
+      {/* HERO */}
+      <section className="listing-page-hero">
         <div className="container">
-          <div className="eyebrow">Developers & Property Owners</div>
-          <h1>Have a Property to Sell?</h1>
-          <p className="muted">
-            Share your details with SOVARA. Every submission is reviewed before
-            public listing.
+
+          <div className="listing-page-label">
+            <span>03</span>
+            <span>DEVELOPERS & PROPERTY OWNERS</span>
+          </div>
+
+          <h1>
+            Have a Property
+            <br />
+            to Sell?
+          </h1>
+
+          <p>
+            Share your property opportunity with SOVARA.
+            Every submission is reviewed before it is
+            considered for public listing.
           </p>
+
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <form className="form" onSubmit={handleSubmit}>
-            <input
-              name="name"
-              placeholder="Name"
-              required
-            />
+      {/* INTRO */}
+      <section className="listing-intro">
+        <div className="container listing-intro-grid">
 
-            <input
-              name="company"
-              placeholder="Company / Developer Name"
-              required
-            />
+          <div>
+            <div className="eyebrow">WORK WITH SOVARA</div>
+          </div>
 
-            <input
-              name="phone"
-              placeholder="Phone"
-              required
-            />
+          <div>
+            <h2>
+              Put the right
+              <br />
+              property in front
+              <br />
+              of the right
+              <br />
+              network.
+            </h2>
 
-            <input
-              name="email"
-              placeholder="Email"
-              type="email"
-              required
-            />
-
-            <input
-              name="property"
-              placeholder="Property / Project Name"
-              required
-            />
-
-            <input
-              name="location"
-              placeholder="Location"
-              required
-            />
-
-            <input
-              name="type"
-              placeholder="Property Type"
-              required
-            />
-
-            <textarea
-              name="message"
-              placeholder="Message / Property Details"
-              rows={6}
-              required
-            />
-
-            <button className="btn dark" type="submit">
-              Submit Property
-            </button>
-          </form>
-        </div>
-      </section>
-    </>
-  );
-}
+            <p>
+              SOVARA works with developers and property
+              owners to present selected opportunities
+             
