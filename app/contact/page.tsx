@@ -22,7 +22,7 @@ export default function Contact() {
     googleForm.method = "POST";
     googleForm.action =
       "https://docs.google.com/forms/d/e/1FAIpQLSe39rB-2BQufLRfY6Q985S2yrk1jM59-RJaBQzcU2494SrqQQ/formResponse";
-    googleForm.target = "google-form-submit";
+    googleForm.target = "google-contact-submit";
     googleForm.style.display = "none";
 
     const fields = [
@@ -34,14 +34,15 @@ export default function Contact() {
 
     fields.forEach(([fieldName, value]) => {
       const input = document.createElement("input");
+
       input.type = "hidden";
       input.name = fieldName;
       input.value = value;
+
       googleForm.appendChild(input);
     });
 
     document.body.appendChild(googleForm);
-
     googleForm.submit();
 
     setTimeout(() => {
@@ -52,13 +53,19 @@ export default function Contact() {
 
   if (submitted) {
     return (
-      <section className="page-hero">
+      <section className="contact-success">
         <div className="container">
           <div className="eyebrow">SOVARA REALTY</div>
-          <h1 className="serif">Thank You.</h1>
-          <p className="muted">
-            Your enquiry has been received. Our team will get in touch with
-            you shortly.
+
+          <h1>
+            Enquiry
+            <br />
+            Received.
+          </h1>
+
+          <p>
+            Thank you for contacting SOVARA. Our team will review your enquiry
+            and get in touch with you.
           </p>
         </div>
       </section>
@@ -68,55 +75,132 @@ export default function Contact() {
   return (
     <>
       <iframe
-        name="google-form-submit"
+        name="google-contact-submit"
         style={{ display: "none" }}
-        title="Form submission"
+        title="Contact form submission"
       />
 
-      <section className="page-hero">
+      <section className="contact-page-hero">
         <div className="container">
-          <div className="eyebrow">Contact</div>
-          <h1 className="serif">Let’s Connect.</h1>
-          <p className="muted">
-            Have a property enquiry or want to work with SOVARA? Send us your
-            details and our team will get in touch.
+          <div className="contact-page-label">
+            <span>05</span>
+            <span>CONTACT SOVARA</span>
+          </div>
+
+          <h1>
+            Let&apos;s Start
+            <br />
+            a Conversation.
+          </h1>
+
+          <p>
+            Whether you are looking for a property, representing a property,
+            or interested in joining the SOVARA network, we would be pleased
+            to hear from you.
           </p>
         </div>
       </section>
 
-      <section className="section">
+      <section className="contact-main">
+        <div className="container contact-main-grid">
+          <div className="contact-intro">
+            <div className="eyebrow">GET IN TOUCH</div>
+
+            <h2>
+              The right
+              <br />
+              conversation
+              <br />
+              starts here.
+            </h2>
+
+            <p>
+              Share your requirement with us and our team will review the
+              details before getting back to you.
+            </p>
+
+            <div className="contact-note">
+              <span>01</span>
+              <p>
+                For property enquiries, please include the location,
+                configuration or any other requirement you already know.
+              </p>
+            </div>
+
+            <div className="contact-note">
+              <span>02</span>
+              <p>
+                For developers and property owners, you can also use our
+                dedicated <strong>List Your Property</strong> page.
+              </p>
+            </div>
+          </div>
+
+          <div className="contact-form-wrap">
+            <div className="eyebrow">SEND AN ENQUIRY</div>
+
+            <form className="form contact-form" onSubmit={handleSubmit}>
+              <div className="contact-field">
+                <span>01</span>
+                <input
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+
+              <div className="contact-field">
+                <span>02</span>
+                <input
+                  name="phone"
+                  placeholder="Phone"
+                  required
+                />
+              </div>
+
+              <div className="contact-field">
+                <span>03</span>
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div className="contact-field contact-field-message">
+                <span>04</span>
+                <textarea
+                  name="message"
+                  placeholder="How can we help?"
+                  rows={7}
+                  required
+                />
+              </div>
+
+              <button
+                className="btn dark contact-submit"
+                type="submit"
+              >
+                Send Enquiry
+                <span>↗</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section className="contact-transparency">
         <div className="container">
-          <form className="form" onSubmit={handleSubmit}>
-            <input
-              name="name"
-              placeholder="Name"
-              required
-            />
+          <div className="eyebrow">SOVARA REALTY</div>
 
-            <input
-              name="phone"
-              placeholder="Phone"
-              required
-            />
-
-            <input
-              name="email"
-              placeholder="Email"
-              type="email"
-              required
-            />
-
-            <textarea
-              name="message"
-              placeholder="How can we help?"
-              rows={6}
-              required
-            />
-
-            <button className="btn dark" type="submit">
-              Send Enquiry
-            </button>
-          </form>
+          <h2>
+            Property is personal.
+            <br />
+            The connection
+            <br />
+            should be trusted.
+          </h2>
         </div>
       </section>
     </>
