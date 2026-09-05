@@ -2,13 +2,15 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="nav" style={{ position: "relative" }}>
-      <div className="container nav-inner">
-        <Link href="/" className="logo">
-          SOVARA REALTY
+    <header className="nav premium-nav">
+      <div className="container nav-inner premium-nav-inner">
+
+        <Link href="/" className="logo premium-logo">
+          SOVARA
+          <span>REALTY</span>
         </Link>
 
-        <nav className="nav-links">
+        <nav className="nav-links premium-nav-links">
           <Link href="/">Home</Link>
           <Link href="/properties">Properties</Link>
           <Link href="/brokers">For Brokers</Link>
@@ -17,28 +19,23 @@ export default function Navbar() {
           <Link href="/contact">Contact</Link>
         </nav>
 
-        <details className="mobile-menu-wrap">
+        <details className="mobile-menu-wrap premium-mobile-menu">
           <summary
             className="mobile-menu"
-            style={{ cursor: "pointer", listStyle: "none" }}
-          >
-            MENU
-          </summary>
-
-          <div
             style={{
-              position: "absolute",
-              top: "100%",
-              left: 0,
-              right: 0,
-              background: "#f7f6f2",
-              borderTop: "1px solid #ddd",
-              padding: "24px",
-              display: "grid",
-              gap: "20px",
-              zIndex: 100,
+              cursor: "pointer",
+              listStyle: "none",
             }}
           >
+            <span>MENU</span>
+            <span className="menu-icon">+</span>
+          </summary>
+
+          <div className="premium-mobile-panel">
+            <div className="mobile-panel-label">
+              SOVARA REALTY
+            </div>
+
             <Link href="/">Home</Link>
             <Link href="/properties">Properties</Link>
             <Link href="/brokers">For Brokers</Link>
@@ -47,6 +44,7 @@ export default function Navbar() {
             <Link href="/contact">Contact</Link>
           </div>
         </details>
+
       </div>
     </header>
   );
