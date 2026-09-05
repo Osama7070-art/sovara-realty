@@ -495,7 +495,144 @@
   .premium-closing-section {
     padding: 85px 0 95px;
   }
+/* =========================================================
+   SOVARA — PREMIUM PROPERTY CARDS
+   ========================================================= */
 
+.premium-card {
+  background: transparent;
+  overflow: hidden;
+}
+
+.premium-card-image-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.premium-card-img {
+  width: 100%;
+  aspect-ratio: 1.48;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s ease;
+}
+
+.premium-card-image-wrap:hover .premium-card-img {
+  transform: scale(1.035);
+}
+
+.premium-card-status {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 8px 11px;
+  background: rgba(255,255,255,.92);
+  color: #171717;
+  font-size: 9px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.premium-card-arrow {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,.94);
+  color: #171717;
+  font-size: 17px;
+}
+
+.premium-card-body {
+  padding: 20px 2px 5px;
+}
+
+.premium-card-location {
+  color: #777;
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.premium-card h3 {
+  max-width: 600px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -.02em;
+}
+
+.premium-card-meta {
+  margin-top: 17px;
+  padding-top: 15px;
+  border-top: 1px solid #d2d0ca;
+  display: flex;
+  gap: 0;
+}
+
+.premium-card-meta span {
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid #d2d0ca;
+  font-size: 11px;
+}
+
+.premium-card-meta span:last-child {
+  border-right: 0;
+}
+
+.premium-card-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #171717;
+  font-size: 10px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.premium-card-link span {
+  margin-left: 8px;
+}
+
+@media (max-width: 760px) {
+  .premium-card-img {
+    aspect-ratio: 1.25;
+  }
+
+  .premium-card-status {
+    top: 12px;
+    left: 12px;
+  }
+
+  .premium-card-arrow {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .premium-card h3 {
+    font-size: 25px;
+  }
+
+  .premium-card-meta {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .premium-card-meta span {
+    font-size: 10px;
+  }
+}
   .premium-closing-section h2 {
     font-size: 52px;
     margin-bottom: 35px;
