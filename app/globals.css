@@ -1041,3 +1041,188 @@
     padding: 25px;
   }
 }
+/* =========================================================
+   SOVARA — PREMIUM PROPERTIES PAGE
+   ========================================================= */
+
+.properties-page-hero {
+  padding: 90px 0 75px;
+  border-bottom: 1px solid #d9d7d0;
+}
+
+.properties-page-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.properties-page-hero h1 {
+  margin: 0;
+  max-width: 900px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 9vw, 118px);
+  line-height: .88;
+  font-weight: 400;
+  letter-spacing: -.055em;
+}
+
+.properties-page-intro {
+  max-width: 390px;
+  margin: 45px 0 0 auto;
+}
+
+.properties-page-intro p {
+  margin: 0;
+  color: #5f5f5f;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.properties-list-section {
+  padding: 85px 0 110px;
+}
+
+.properties-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 28px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #d2d0ca;
+}
+
+.properties-list-header h2 {
+  margin: 13px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+
+.properties-count {
+  color: #777;
+  font-size: 9px;
+  letter-spacing: .14em;
+}
+
+.properties-premium-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 45px;
+  row-gap: 75px;
+}
+
+.properties-empty {
+  min-height: 300px;
+  padding: 55px 0;
+  border-bottom: 1px solid #d2d0ca;
+}
+
+.properties-empty-number {
+  margin-bottom: 25px;
+  color: #999;
+  font-size: 10px;
+  letter-spacing: .15em;
+}
+
+.properties-empty h3 {
+  margin: 0 0 15px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.properties-empty p {
+  max-width: 430px;
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.properties-closing {
+  padding: 110px 0 125px;
+  background: #171717;
+  color: #f7f6f2;
+}
+
+.properties-closing .eyebrow {
+  color: #aaa;
+}
+
+.properties-closing h2 {
+  margin: 45px 0 0;
+  max-width: 850px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: .98;
+  font-weight: 400;
+  letter-spacing: -.045em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  .properties-page-hero {
+    padding: 60px 0 50px;
+  }
+
+  .properties-page-label {
+    margin-bottom: 40px;
+  }
+
+  .properties-page-hero h1 {
+    font-size: 58px;
+  }
+
+  .properties-page-intro {
+    margin: 35px 0 0;
+  }
+
+  .properties-list-section {
+    padding: 55px 0 75px;
+  }
+
+  .properties-list-header {
+    align-items: start;
+    gap: 25px;
+  }
+
+  .properties-list-header h2 {
+    font-size: 34px;
+  }
+
+  .properties-count {
+    padding-top: 5px;
+    white-space: nowrap;
+  }
+
+  .properties-premium-grid {
+    grid-template-columns: 1fr;
+    row-gap: 55px;
+  }
+
+  .properties-empty {
+    min-height: 250px;
+  }
+
+  .properties-empty h3 {
+    font-size: 32px;
+  }
+
+  .properties-closing {
+    padding: 75px 0 85px;
+  }
+
+  .properties-closing h2 {
+    margin-top: 35px;
+    font-size: 43px;
+  }
+}
