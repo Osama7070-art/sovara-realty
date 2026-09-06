@@ -39,7 +39,9 @@ export default function Navbar() {
     <header className="nav premium-nav">
       <div className="container nav-inner premium-nav-inner">
 
+        {/* MOBILE / CENTERED BRAND */}
         <Link href="/" className="logo premium-logo">
+
           <span className="sovara-logo-mark">
             <SovaraMark />
           </span>
@@ -48,18 +50,24 @@ export default function Navbar() {
             SOVARA
             <span>REALTY</span>
           </span>
+
         </Link>
 
+        {/* DESKTOP NAVIGATION */}
         <nav className="nav-links premium-nav-links">
           <Link href="/">Home</Link>
           <Link href="/properties">Properties</Link>
           <Link href="/brokers">For Brokers</Link>
-          <Link href="/list-your-property">List Property</Link>
+          <Link href="/list-your-property">
+            List Property
+          </Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
         </nav>
 
+        {/* MOBILE MENU */}
         <details className="mobile-menu-wrap premium-mobile-menu">
+
           <summary
             className="mobile-menu"
             style={{
@@ -72,6 +80,7 @@ export default function Navbar() {
           </summary>
 
           <div className="premium-mobile-panel">
+
             <div className="mobile-panel-label">
               SOVARA REALTY
             </div>
@@ -79,10 +88,14 @@ export default function Navbar() {
             <Link href="/">Home</Link>
             <Link href="/properties">Properties</Link>
             <Link href="/brokers">For Brokers</Link>
-            <Link href="/list-your-property">List Property</Link>
+            <Link href="/list-your-property">
+              List Property
+            </Link>
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
+
           </div>
+
         </details>
 
       </div>
