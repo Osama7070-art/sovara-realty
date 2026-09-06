@@ -2679,3 +2679,95 @@
     font-size: 7px;
   }
 }
+/* SOVARA — CENTERED BRANDING */
+
+.premium-nav-inner {
+  position: relative;
+}
+
+.premium-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #171717;
+  text-decoration: none;
+}
+
+.sovara-logo-mark {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #b9965a;
+  flex-shrink: 0;
+}
+
+.sovara-mark {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sovara-wordmark {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.20em;
+  font-weight: 500;
+  color: #171717;
+}
+
+.sovara-wordmark > span {
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.16em;
+  color: #777;
+  font-weight: 500;
+}
+
+/* Desktop navigation stays on left */
+.premium-nav-links {
+  margin-right: auto;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+
+  .premium-logo {
+    gap: 9px;
+  }
+
+  .sovara-logo-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sovara-wordmark {
+    font-size: 17px;
+    letter-spacing: 0.18em;
+    gap: 6px;
+  }
+
+  .sovara-wordmark > span {
+    font-size: 7px;
+    letter-spacing: 0.15em;
+  }
+
+  .premium-mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
