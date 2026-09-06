@@ -5,7 +5,9 @@ import { properties } from "../data/properties";
 export default function Home() {
   return (
     <>
-      {/* HERO */}
+      {/* =====================================================
+          HERO
+          ===================================================== */}
       <section className="hero premium-hero">
         <div className="hero-bg" />
         <div className="hero-overlay" />
@@ -50,22 +52,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROPERTY FINDER */}
+      {/* =====================================================
+          PROPERTY DISCOVERY
+          ===================================================== */}
       <section className="section premium-finder-section">
         <div className="container">
+
           <div className="finder-intro">
             <div>
-              <div className="eyebrow">Find Your Property</div>
+              <div className="eyebrow">Property Discovery</div>
 
               <h2 className="serif">
-                Discover the right
+                Find Your Next
                 <br />
-                opportunity.
+                Property.
               </h2>
             </div>
 
             <p className="muted">
-              Explore property opportunities by location, type and budget.
+              Explore selected property opportunities by location,
+              property type and budget.
             </p>
           </div>
 
@@ -76,6 +82,7 @@ export default function Home() {
           >
             <div className="search-field">
               <span>01</span>
+
               <select name="location" defaultValue="">
                 <option value="">Location</option>
                 <option value="Delhi">Delhi</option>
@@ -88,6 +95,7 @@ export default function Home() {
 
             <div className="search-field">
               <span>02</span>
+
               <select name="type" defaultValue="">
                 <option value="">Property Type</option>
                 <option value="Apartment">Apartment</option>
@@ -99,6 +107,7 @@ export default function Home() {
 
             <div className="search-field">
               <span>03</span>
+
               <select name="budget" defaultValue="">
                 <option value="">Budget</option>
                 <option value="under-50">Under ₹50 Lakh</option>
@@ -108,16 +117,23 @@ export default function Home() {
               </select>
             </div>
 
-            <button className="btn dark search-button" type="submit">
-              Search Properties <span>↗</span>
+            <button
+              className="btn dark search-button"
+              type="submit"
+            >
+              Explore Properties <span>↗</span>
             </button>
           </form>
+
         </div>
       </section>
 
-      {/* FEATURED PROPERTIES */}
+      {/* =====================================================
+          FEATURED PROPERTIES
+          ===================================================== */}
       <section className="section premium-properties-section">
         <div className="container">
+
           <div className="section-head premium-section-head">
             <div>
               <div className="eyebrow">Selected Opportunities</div>
@@ -132,8 +148,8 @@ export default function Home() {
             <div className="section-side">
               <p className="muted">
                 Selected opportunities presented by SOVARA.
-                Verified property information will be added before public
-                listing.
+                Verified property information will be added before
+                public listing.
               </p>
 
               <Link className="outline-link" href="/properties">
@@ -144,22 +160,31 @@ export default function Home() {
 
           <div className="grid premium-property-grid">
             {properties.map((p) => (
-              <PropertyCard key={p.id} property={p} />
+              <PropertyCard
+                key={p.id}
+                property={p}
+              />
             ))}
           </div>
+
         </div>
       </section>
 
-      {/* BROKER CTA */}
+      {/* =====================================================
+          BROKER CTA
+          ===================================================== */}
       <section className="premium-broker-section">
         <div className="container">
+
           <div className="broker-inner">
+
             <div className="broker-label">
               <span>04</span>
               <span>FOR BROKERS</span>
             </div>
 
             <div className="broker-content">
+
               <div>
                 <div className="eyebrow">Build With SOVARA</div>
 
@@ -172,22 +197,29 @@ export default function Home() {
 
               <div className="broker-copy">
                 <p>
-                  Join the network, access selected properties, bring your
-                  clients and work with SOVARA through the transaction.
+                  Join the network, access selected properties, bring
+                  your clients and work with SOVARA through the
+                  transaction.
                 </p>
 
                 <Link className="btn light" href="/brokers">
                   Become a Partner <span>↗</span>
                 </Link>
               </div>
+
             </div>
+
           </div>
+
         </div>
       </section>
 
-      {/* FINAL STATEMENT */}
+      {/* =====================================================
+          FINAL STATEMENT
+          ===================================================== */}
       <section className="premium-closing-section">
         <div className="container">
+
           <div className="eyebrow">SOVARA REALTY</div>
 
           <h2 className="serif">
@@ -199,6 +231,7 @@ export default function Home() {
           <Link className="outline-link" href="/contact">
             Speak With SOVARA <span>↗</span>
           </Link>
+
         </div>
       </section>
     </>
