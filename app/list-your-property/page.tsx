@@ -65,14 +65,21 @@ export default function ListYourProperty() {
 
   if (submitted) {
     return (
-      <section className="listing-success">
+      <section className="premium-listing-success">
         <div className="container">
-          <div className="eyebrow">SOVARA REALTY</div>
 
-          <h1>
+          <div className="eyebrow">
+            SOVARA REALTY
+          </div>
+
+          <div className="listing-success-number">
+            04
+          </div>
+
+          <h1 className="serif">
             Submission
             <br />
-            Received.
+            <em>Received.</em>
           </h1>
 
           <p>
@@ -80,6 +87,14 @@ export default function ListYourProperty() {
             Our team will review the submission and get in
             touch with you.
           </p>
+
+          <a
+            href="/"
+            className="outline-link"
+          >
+            Return Home <span>↗</span>
+          </a>
+
         </div>
       </section>
     );
@@ -93,202 +108,248 @@ export default function ListYourProperty() {
         title="Property submission"
       />
 
-      {/* HERO */}
-      <section className="listing-page-hero">
+      {/* =====================================================
+          HERO
+          ===================================================== */}
+      <section className="premium-listing-hero">
         <div className="container">
 
-          <div className="listing-page-label">
+          <div className="premium-listing-label">
             <span>03</span>
             <span>DEVELOPERS & PROPERTY OWNERS</span>
+            <span>SOVARA REALTY</span>
           </div>
 
-          <h1>
-            Have a Property
-            <br />
-            to Sell?
-          </h1>
+          <div className="premium-listing-heading">
 
-          <p>
-            Share your property opportunity with SOVARA.
-            Every submission is reviewed before it is
-            considered for public listing.
-          </p>
-
-        </div>
-      </section>
-
-      {/* INTRO */}
-      <section className="listing-intro">
-        <div className="container listing-intro-grid">
-
-          <div>
-            <div className="eyebrow">WORK WITH SOVARA</div>
-          </div>
-
-          <div>
-            <h2>
-              Put the right
-              <br />
-              property in front
-              <br />
-              of the right
-              <br />
-              network.
-            </h2>
-
-            <p>
-              SOVARA works with developers and property
-              owners to present selected opportunities
-              through an independent broker network.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      {/* SUBMISSION */}
-      <section className="listing-application">
-        <div className="container listing-application-grid">
-
-          <div className="listing-application-copy">
-            <div className="eyebrow">PROPERTY SUBMISSION</div>
-
-            <h2>
-              Tell us
-              <br />
-              about the
-              <br />
-              property.
-            </h2>
-
-            <p>
-              Provide the basic details below. Our team
-              will review the information before any public
-              listing decision is made.
-            </p>
-
-            <div className="listing-note">
-              <span>01</span>
-              <p>
-                Submission does not automatically mean
-                public listing.
-              </p>
+            <div className="eyebrow">
+              PROPERTY SUBMISSION
             </div>
 
-            <div className="listing-note">
-              <span>02</span>
-              <p>
-                Property information will be verified
-                before publication.
-              </p>
-            </div>
-          </div>
+            <h1 className="serif">
+              Have a Property
+              <br />
+              to <em>Sell?</em>
+            </h1>
 
-          <div className="listing-form-wrap">
-
-            <form
-              className="form listing-form"
-              onSubmit={handleSubmit}
-            >
-
-              <div className="listing-field">
-                <span>01</span>
-                <input
-                  name="name"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-
-              <div className="listing-field">
-                <span>02</span>
-                <input
-                  name="company"
-                  placeholder="Company / Developer Name"
-                  required
-                />
-              </div>
-
-              <div className="listing-field">
-                <span>03</span>
-                <input
-                  name="phone"
-                  placeholder="Phone"
-                  required
-                />
-              </div>
-
-              <div className="listing-field">
-                <span>04</span>
-                <input
-                  name="email"
-                  placeholder="Email"
-                  type="email"
-                  required
-                />
-              </div>
-
-              <div className="listing-field">
-                <span>05</span>
-                <input
-                  name="property"
-                  placeholder="Property / Project Name"
-                  required
-                />
-              </div>
-
-              <div className="listing-field">
-                <span>06</span>
-                <input
-                  name="location"
-                  placeholder="Location"
-                  required
-                />
-              </div>
-
-              <div className="listing-field">
-                <span>07</span>
-                <input
-                  name="type"
-                  placeholder="Property Type"
-                  required
-                />
-              </div>
-
-              <div className="listing-field listing-field-message">
-                <span>08</span>
-                <textarea
-                  name="message"
-                  placeholder="Message / Property Details"
-                  rows={6}
-                  required
-                />
-              </div>
-
-              <button
-                className="btn dark listing-submit"
-                type="submit"
-              >
-                Submit Property
-                <span>↗</span>
-              </button>
-
-            </form>
+            <p>
+              Share your property opportunity with SOVARA.
+              Every submission is reviewed before it is
+              considered for public listing.
+            </p>
 
           </div>
+
+          <div className="premium-listing-hero-bottom">
+            <span>DEVELOPERS</span>
+            <span>PROPERTY OWNERS</span>
+            <span>REVIEW BEFORE LISTING</span>
+          </div>
+
         </div>
       </section>
 
-      {/* CLOSING */}
-      <section className="listing-closing">
+      {/* =====================================================
+          INTRO
+          ===================================================== */}
+      <section className="premium-listing-intro">
         <div className="container">
 
-          <div className="eyebrow">SOVARA REALTY</div>
+          <div className="premium-listing-intro-grid">
 
-          <h2>
+            <div className="eyebrow">
+              WORK WITH SOVARA
+            </div>
+
+            <div>
+              <h2 className="serif">
+                Put the right
+                <br />
+                property in front
+                <br />
+                of the right
+                <br />
+                <em>network.</em>
+              </h2>
+
+              <p>
+                SOVARA works with developers and property
+                owners to present selected opportunities
+                through an independent broker network.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* =====================================================
+          SUBMISSION
+          ===================================================== */}
+      <section className="premium-listing-application">
+        <div className="container">
+
+          <div className="premium-listing-application-grid">
+
+            <div className="premium-listing-copy">
+
+              <div className="eyebrow">
+                PROPERTY SUBMISSION
+              </div>
+
+              <h2 className="serif">
+                Tell us
+                <br />
+                about the
+                <br />
+                <em>property.</em>
+              </h2>
+
+              <p>
+                Provide the basic details below. Our team
+                will review the information before any public
+                listing decision is made.
+              </p>
+
+              <div className="premium-listing-notes">
+
+                <div>
+                  <span>01</span>
+                  <p>
+                    Submission does not automatically mean
+                    public listing.
+                  </p>
+                </div>
+
+                <div>
+                  <span>02</span>
+                  <p>
+                    Property information will be verified
+                    before publication.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div className="premium-listing-form-wrap">
+
+              <div className="eyebrow">
+                PROPERTY DETAILS
+              </div>
+
+              <form
+                className="premium-listing-form"
+                onSubmit={handleSubmit}
+              >
+
+                <div className="premium-listing-field">
+                  <span>01</span>
+                  <input
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+
+                <div className="premium-listing-field">
+                  <span>02</span>
+                  <input
+                    name="company"
+                    placeholder="Company / Developer Name"
+                    required
+                  />
+                </div>
+
+                <div className="premium-listing-field">
+                  <span>03</span>
+                  <input
+                    name="phone"
+                    placeholder="Phone"
+                    required
+                  />
+                </div>
+
+                <div className="premium-listing-field">
+                  <span>04</span>
+                  <input
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+                    required
+                  />
+                </div>
+
+                <div className="premium-listing-field">
+                  <span>05</span>
+                  <input
+                    name="property"
+                    placeholder="Property / Project Name"
+                    required
+                  />
+                </div>
+
+                <div className="premium-listing-field">
+                  <span>06</span>
+                  <input
+                    name="location"
+                    placeholder="Location"
+                    required
+                  />
+                </div>
+
+                <div className="premium-listing-field">
+                  <span>07</span>
+                  <input
+                    name="type"
+                    placeholder="Property Type"
+                    required
+                  />
+                </div>
+
+                <div className="premium-listing-field premium-listing-field-message">
+                  <span>08</span>
+                  <textarea
+                    name="message"
+                    placeholder="Message / Property Details"
+                    rows={6}
+                    required
+                  />
+                </div>
+
+                <button
+                  className="btn dark premium-listing-submit"
+                  type="submit"
+                >
+                  Submit Property
+                  <span>↗</span>
+                </button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* =====================================================
+          CLOSING
+          ===================================================== */}
+      <section className="premium-listing-closing">
+        <div className="container">
+
+          <div className="eyebrow">
+            SOVARA REALTY
+          </div>
+
+          <h2 className="serif">
             Selected properties.
             <br />
-            Trusted connections.
+            <em>Trusted connections.</em>
           </h2>
 
         </div>
