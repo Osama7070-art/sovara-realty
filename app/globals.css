@@ -3268,4 +3268,25 @@ button {
 
   .premium-card-body h3 {
     font-size: 27px;
-    line-height: 1.08
+    line-height: 1.08;
+    .premium-card-body h3 {
+  font-size: 27px;
+  line-height: 1.08;
+}
+
+.premium-card-meta {
+  margin-top: 14px;
+  padding-top: 13px;
+}
+
+.premium-card-meta span {
+  font-size: 9px;
+  margin-right: 11px;
+  padding-right: 11px;
+}
+
+.premium-card-footer {
+  margin-top: 18px;
+}
+
+  }
