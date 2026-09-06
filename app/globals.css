@@ -7748,3 +7748,274 @@ button {
     line-height: .94;
   }
 }
+/* =========================================================
+   SOVARA — GLOBAL CONSISTENCY & SAFETY / STEP 12A
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   GLOBAL BOX MODEL
+   --------------------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #f7f6f2;
+  color: #171717;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+
+/* ---------------------------------------------------------
+   GLOBAL CONTAINER
+   --------------------------------------------------------- */
+
+.container {
+  width: min(1120px, calc(100% - 48px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ---------------------------------------------------------
+   LINKS
+   --------------------------------------------------------- */
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* ---------------------------------------------------------
+   PREMIUM NAVIGATION SAFETY
+   --------------------------------------------------------- */
+
+.premium-nav {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+
+.premium-nav-inner {
+  min-height: var(--nav-height, 76px);
+}
+
+.premium-nav-links a {
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+
+.premium-nav-links a:hover {
+  opacity: .58;
+}
+
+.premium-mobile-menu {
+  z-index: 1100;
+}
+
+.premium-mobile-panel {
+  z-index: 9999;
+}
+
+
+/* ---------------------------------------------------------
+   TOUCH TARGETS
+   --------------------------------------------------------- */
+
+.btn,
+.premium-mobile-menu .mobile-menu,
+.premium-card-image-wrap,
+.premium-card-link,
+.outline-link {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn,
+.premium-mobile-menu .mobile-menu {
+  min-height: 44px;
+}
+
+
+/* ---------------------------------------------------------
+   PROPERTY CARD CLEANUP
+   --------------------------------------------------------- */
+
+.premium-card {
+  min-width: 0;
+}
+
+.premium-card-body h3 {
+  overflow-wrap: break-word;
+}
+
+.premium-card-meta {
+  min-width: 0;
+}
+
+.premium-card-meta span {
+  overflow-wrap: break-word;
+}
+
+
+/* ---------------------------------------------------------
+   FORM SAFETY
+   --------------------------------------------------------- */
+
+.premium-contact-form,
+.premium-broker-form,
+.premium-listing-form {
+  min-width: 0;
+}
+
+.premium-contact-field input,
+.premium-contact-field textarea,
+.premium-broker-field input,
+.premium-broker-field textarea,
+.premium-listing-field input,
+.premium-listing-field textarea {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.premium-contact-submit,
+.premium-broker-submit,
+.premium-listing-submit {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+/* ---------------------------------------------------------
+   PREMIUM BUTTON CONSISTENCY
+   --------------------------------------------------------- */
+
+.premium-contact-submit,
+.premium-broker-submit,
+.premium-listing-submit,
+.premium-broker-section .btn.light,
+.premium-property-actions .btn {
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: .14em;
+}
+
+
+/* ---------------------------------------------------------
+   REDUCED MOTION
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE GLOBAL SAFETY
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .container {
+    width: calc(100% - 48px);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    overflow-wrap: break-word;
+  }
+
+  .premium-nav-inner {
+    width: calc(100% - 28px);
+  }
+
+  .premium-contact-field input,
+  .premium-contact-field textarea,
+  .premium-broker-field input,
+  .premium-broker-field textarea,
+  .premium-listing-field input,
+  .premium-listing-field textarea {
+    font-size: 13px;
+  }
+
+  .premium-contact-submit,
+  .premium-broker-submit,
+  .premium-listing-submit {
+    width: 100%;
+    min-height: 56px;
+  }
+
+  .premium-card-image-wrap {
+    max-width: 100%;
+  }
+
+  .premium-card-img {
+    max-width: none;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+
+  .container {
+    width: calc(100% - 36px);
+  }
+
+  .premium-mobile-panel {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .premium-mobile-panel a {
+    font-size: 22px;
+  }
+
+  .premium-contact-heading h1,
+  .premium-broker-page-heading h1,
+  .premium-listing-heading h1,
+  .premium-about-heading h1 {
+    letter-spacing: -.055em;
+  }
+}
