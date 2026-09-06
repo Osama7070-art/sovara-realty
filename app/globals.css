@@ -9353,3 +9353,157 @@ footer {
     font-weight: 500 !important;
   }
 }
+/* =========================================================
+   SOVARA — STEP 12D FINAL READABILITY
+   Bigger + clearer micro typography
+   ========================================================= */
+
+/* Desktop */
+
+.eyebrow {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: .13em !important;
+}
+
+.hero-topline,
+.hero-bottom,
+.properties-page-label,
+.premium-listing-label,
+.premium-about-label,
+.premium-contact-label,
+.premium-broker-page-label,
+.properties-hero-bottom,
+.premium-listing-hero-bottom,
+.premium-about-hero-bottom,
+.premium-contact-hero-bottom,
+.premium-broker-page-hero-bottom {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: .12em !important;
+}
+
+.premium-nav-links a {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: .09em !important;
+}
+
+.premium-card-location {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: .12em !important;
+}
+
+.premium-card-status {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: .11em !important;
+}
+
+.premium-card-meta span {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+}
+
+.premium-card-link,
+.outline-link {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: .1em !important;
+}
+
+.broker-label,
+.premium-about-model-step > span,
+.premium-broker-process-step > span,
+.premium-broker-benefits-list > div > span,
+.premium-contact-field > span,
+.premium-broker-field > span,
+.premium-listing-field > span {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+}
+
+.footer-col h4 {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+}
+
+.footer-col a {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.footer-bottom {
+  font-size: 9px !important;
+  font-weight: 500 !important;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 760px) {
+
+  .eyebrow {
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    letter-spacing: .12em !important;
+  }
+
+  .hero-topline,
+  .hero-bottom {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+    letter-spacing: .1em !important;
+  }
+
+  .premium-card-location {
+    font-size: 10px !important;
+    font-weight: 600 !important;
+  }
+
+  .premium-card-status {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+  }
+
+  .premium-card-meta span {
+    font-size: 10px !important;
+    font-weight: 500 !important;
+  }
+
+  .premium-card-link,
+  .outline-link {
+    font-size: 10px !important;
+    font-weight: 600 !important;
+  }
+
+  .properties-page-label,
+  .premium-listing-label,
+  .premium-about-label,
+  .premium-contact-label,
+  .premium-broker-page-label,
+  .properties-hero-bottom,
+  .premium-listing-hero-bottom,
+  .premium-about-hero-bottom,
+  .premium-contact-hero-bottom,
+  .premium-broker-page-hero-bottom {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+  }
+
+  .footer-col h4 {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+  }
+
+  .footer-col a {
+    font-size: 12px !important;
+  }
+
+  .footer-bottom {
+    font-size: 8px !important;
+  }
+}
