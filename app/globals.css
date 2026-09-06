@@ -2771,3 +2771,22 @@
     transform: translateY(-50%);
   }
 }
+/* MENU PANEL — CLOSED BY DEFAULT */
+.premium-mobile-panel {
+  display: none;
+}
+
+/* OPEN ONLY AFTER CLICK */
+.premium-mobile-menu[open] .premium-mobile-panel {
+  display: grid;
+}
+
+/* MENU BUTTON */
+.premium-mobile-menu summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.premium-mobile-menu summary::-webkit-details-marker {
+  display: none;
+}
