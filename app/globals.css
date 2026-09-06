@@ -5663,3 +5663,691 @@ button {
     line-height: .94;
   }
 }
+/* =========================================================
+   SOVARA — ABOUT PAGE / STEP 9B
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   HERO
+   --------------------------------------------------------- */
+
+.premium-about-hero {
+  background: #f7f6f2;
+  color: #171717;
+  padding: 70px 0 0;
+}
+
+.premium-about-hero .container {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.premium-about-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d8d6cf;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.premium-about-heading {
+  max-width: 1050px;
+  padding: 105px 0 80px;
+}
+
+.premium-about-heading .eyebrow {
+  color: #777;
+  margin-bottom: 24px;
+}
+
+.premium-about-heading h1 {
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(68px, 9.5vw, 138px);
+  font-weight: 400;
+  line-height: .84;
+  letter-spacing: -.065em;
+}
+
+.premium-about-heading h1 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-about-heading p {
+  max-width: 470px;
+  margin: 45px 0 0;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.premium-about-hero-bottom {
+  margin-top: auto;
+  padding: 18px 0 22px;
+  border-top: 1px solid #d8d6cf;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 8px;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------
+   OUR ROLE
+   --------------------------------------------------------- */
+
+.premium-about-role {
+  background: #eeece6;
+  color: #171717;
+  padding: 135px 0 150px;
+}
+
+.premium-about-role-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, .35fr) minmax(0, 1fr);
+  gap: 90px;
+}
+
+.premium-about-side .eyebrow {
+  color: #777;
+}
+
+.premium-about-role-content h2 {
+  max-width: 900px;
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 6.8vw, 94px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.05em;
+}
+
+.premium-about-role-content h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-about-role-copy {
+  max-width: 610px;
+  margin-top: 48px;
+}
+
+.premium-about-role-copy p {
+  margin: 0;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.premium-about-role-copy p + p {
+  margin-top: 24px;
+}
+
+
+/* ---------------------------------------------------------
+   SOVARA MODEL
+   --------------------------------------------------------- */
+
+.premium-about-model {
+  background: #171717;
+  color: #f7f6f2;
+  padding: 130px 0 140px;
+}
+
+.premium-about-model-heading {
+  display: grid;
+  grid-template-columns: minmax(180px, .35fr) minmax(0, 1fr);
+  gap: 90px;
+}
+
+.premium-about-model-heading .eyebrow {
+  color: #aaa8a1;
+}
+
+.premium-about-model-heading h2 {
+  max-width: 800px;
+  margin: 0;
+  color: #f7f6f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 6.8vw, 94px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.05em;
+}
+
+.premium-about-model-heading h2 em {
+  color: #c5a56d;
+  font-style: italic;
+}
+
+.premium-about-model-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 100px;
+  border-top: 1px solid rgba(247,246,242,.22);
+}
+
+.premium-about-model-step {
+  min-height: 280px;
+  padding: 24px 28px 30px 0;
+  border-right: 1px solid rgba(247,246,242,.22);
+}
+
+.premium-about-model-step + .premium-about-model-step {
+  padding-left: 28px;
+}
+
+.premium-about-model-step:last-child {
+  border-right: 0;
+}
+
+.premium-about-model-step > span {
+  color: #99968e;
+  font-size: 9px;
+  letter-spacing: .14em;
+}
+
+.premium-about-model-step h3 {
+  margin: 65px 0 18px;
+  color: #f7f6f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.premium-about-model-step p {
+  max-width: 220px;
+  margin: 0;
+  color: #aaa8a1;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   PRINCIPLES
+   --------------------------------------------------------- */
+
+.premium-about-principles {
+  background: #f7f6f2;
+  color: #171717;
+  padding: 140px 0 150px;
+}
+
+.premium-about-principles-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, .75fr) minmax(0, 1.25fr);
+  gap: 100px;
+}
+
+.premium-about-principles-heading .eyebrow {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.premium-about-principles-heading h2 {
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 7vw, 96px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.055em;
+}
+
+.premium-about-principles-heading h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-about-principles-list {
+  border-top: 1px solid #d1cfc8;
+}
+
+.premium-about-principles-list > div {
+  display: grid;
+  grid-template-columns: 55px minmax(0, 1fr);
+  gap: 20px;
+  padding: 28px 0 30px;
+  border-bottom: 1px solid #d1cfc8;
+}
+
+.premium-about-principles-list > div > span {
+  color: #999;
+  font-size: 9px;
+  letter-spacing: .13em;
+}
+
+.premium-about-principles-list h3 {
+  margin: 0 0 13px;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.premium-about-principles-list p {
+  max-width: 510px;
+  margin: 0;
+  color: #666560;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   TRANSPARENCY
+   --------------------------------------------------------- */
+
+.premium-about-transparency {
+  background: #eeece6;
+  color: #171717;
+  padding: 135px 0 145px;
+}
+
+.premium-about-transparency > .container > .eyebrow {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.premium-about-transparency-heading h2 {
+  max-width: 1000px;
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(60px, 7.5vw, 104px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.055em;
+}
+
+.premium-about-transparency-heading h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-about-transparency-copy {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 70px;
+  max-width: 800px;
+  margin: 65px 0 0 auto;
+}
+
+.premium-about-transparency-copy p {
+  margin: 0;
+  color: #666560;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+
+/* ---------------------------------------------------------
+   COMPANY INFORMATION
+   --------------------------------------------------------- */
+
+.premium-about-information {
+  background: #f7f6f2;
+  color: #171717;
+  padding: 140px 0 150px;
+  border-top: 1px solid #d9d7d0;
+}
+
+.premium-about-information-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, .75fr) minmax(0, 1.25fr);
+  gap: 100px;
+}
+
+.premium-about-information-heading .eyebrow {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.premium-about-information-heading h2 {
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 7vw, 96px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.055em;
+}
+
+.premium-about-information-heading h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-about-placeholder {
+  border-top: 1px solid #d1cfc8;
+}
+
+.premium-about-placeholder > div {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 30px;
+  padding: 23px 0;
+  border-bottom: 1px solid #d1cfc8;
+}
+
+.premium-about-placeholder span {
+  color: #777;
+  font-size: 9px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.premium-about-placeholder strong {
+  color: #555;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+/* ---------------------------------------------------------
+   CLOSING
+   --------------------------------------------------------- */
+
+.premium-about-closing {
+  background: #171717;
+  color: #f7f6f2;
+  padding: 145px 0 155px;
+}
+
+.premium-about-closing .eyebrow {
+  color: #aaa8a1;
+  margin-bottom: 28px;
+}
+
+.premium-about-closing h2 {
+  max-width: 1050px;
+  margin: 0;
+  color: #f7f6f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 7vw, 98px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.055em;
+}
+
+.premium-about-closing h2 em {
+  color: #c5a56d;
+  font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  /* HERO */
+
+  .premium-about-hero {
+    padding: 48px 0 0;
+  }
+
+  .premium-about-hero .container {
+    min-height: 570px;
+  }
+
+  .premium-about-label {
+    padding-bottom: 18px;
+    font-size: 8px;
+  }
+
+  .premium-about-label span:nth-child(2) {
+    display: none;
+  }
+
+  .premium-about-heading {
+    padding: 78px 0 55px;
+  }
+
+  .premium-about-heading .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .premium-about-heading h1 {
+    font-size: clamp(58px, 16vw, 76px);
+    line-height: .88;
+  }
+
+  .premium-about-heading p {
+    max-width: 100%;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-about-hero-bottom {
+    padding: 16px 0 19px;
+  }
+
+  .premium-about-hero-bottom span:nth-child(2) {
+    display: none;
+  }
+
+  .premium-about-hero-bottom span {
+    font-size: 8px;
+  }
+
+
+  /* ROLE */
+
+  .premium-about-role {
+    padding: 85px 0 95px;
+  }
+
+  .premium-about-role-grid {
+    display: block;
+  }
+
+  .premium-about-side {
+    margin-bottom: 30px;
+  }
+
+  .premium-about-role-content h2 {
+    font-size: clamp(48px, 14vw, 66px);
+    line-height: .92;
+  }
+
+  .premium-about-role-copy {
+    margin-top: 30px;
+  }
+
+  .premium-about-role-copy p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-about-role-copy p + p {
+    margin-top: 20px;
+  }
+
+
+  /* MODEL */
+
+  .premium-about-model {
+    padding: 88px 0 95px;
+  }
+
+  .premium-about-model-heading {
+    display: block;
+  }
+
+  .premium-about-model-heading .eyebrow {
+    margin-bottom: 30px;
+  }
+
+  .premium-about-model-heading h2 {
+    font-size: clamp(48px, 14vw, 66px);
+    line-height: .92;
+  }
+
+  .premium-about-model-steps {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .premium-about-model-step {
+    min-height: 0;
+    padding: 22px 0 28px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(247,246,242,.22);
+  }
+
+  .premium-about-model-step + .premium-about-model-step {
+    padding-left: 0;
+  }
+
+  .premium-about-model-step:last-child {
+    border-bottom: 0;
+  }
+
+  .premium-about-model-step h3 {
+    margin: 30px 0 12px;
+    font-size: 23px;
+  }
+
+  .premium-about-model-step p {
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+
+  /* PRINCIPLES */
+
+  .premium-about-principles {
+    padding: 90px 0 100px;
+  }
+
+  .premium-about-principles-grid {
+    display: block;
+  }
+
+  .premium-about-principles-heading .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-about-principles-heading h2 {
+    font-size: clamp(50px, 14vw, 68px);
+    line-height: .92;
+  }
+
+  .premium-about-principles-list {
+    margin-top: 55px;
+  }
+
+  .premium-about-principles-list > div {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 15px;
+    padding: 22px 0 25px;
+  }
+
+  .premium-about-principles-list h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .premium-about-principles-list p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+
+  /* TRANSPARENCY */
+
+  .premium-about-transparency {
+    padding: 88px 0 100px;
+  }
+
+  .premium-about-transparency > .container > .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-about-transparency-heading h2 {
+    font-size: clamp(50px, 14vw, 68px);
+    line-height: .92;
+  }
+
+  .premium-about-transparency-copy {
+    display: block;
+    margin: 42px 0 0;
+  }
+
+  .premium-about-transparency-copy p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-about-transparency-copy p + p {
+    margin-top: 22px;
+  }
+
+
+  /* COMPANY INFORMATION */
+
+  .premium-about-information {
+    padding: 90px 0 100px;
+  }
+
+  .premium-about-information-grid {
+    display: block;
+  }
+
+  .premium-about-information-heading h2 {
+    font-size: clamp(50px, 14vw, 68px);
+    line-height: .92;
+  }
+
+  .premium-about-placeholder {
+    margin-top: 55px;
+  }
+
+  .premium-about-placeholder > div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px 0;
+  }
+
+  .premium-about-placeholder span {
+    font-size: 8px;
+  }
+
+  .premium-about-placeholder strong {
+    font-size: 11px;
+  }
+
+
+  /* CLOSING */
+
+  .premium-about-closing {
+    padding: 88px 0 100px;
+  }
+
+  .premium-about-closing .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-about-closing h2 {
+    font-size: clamp(48px, 13vw, 64px);
+    line-height: .94;
+  }
+}
