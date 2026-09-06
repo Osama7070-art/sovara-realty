@@ -15,10 +15,10 @@ export default function Brokers() {
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
     const city = (form.elements.namedItem("city") as HTMLInputElement).value;
     const experience = (
-      form.elements.namedItem("experience") as HTMLSelectElement
+      form.elements.namedItem("experience") as HTMLInputElement
     ).value;
-    const message = (
-      form.elements.namedItem("message") as HTMLTextAreaElement
+    const details = (
+      form.elements.namedItem("details") as HTMLTextAreaElement
     ).value;
 
     const googleForm = document.createElement("form");
@@ -35,14 +35,16 @@ export default function Brokers() {
       ["entry.492206955", email],
       ["entry.813118130", city],
       ["entry.2086656761", experience],
-      ["entry.484645838", message],
+      ["entry.484645838", details],
     ];
 
     fields.forEach(([fieldName, value]) => {
       const input = document.createElement("input");
+
       input.type = "hidden";
       input.name = fieldName;
       input.value = value;
+
       googleForm.appendChild(input);
     });
 
@@ -59,14 +61,9 @@ export default function Brokers() {
     return (
       <section className="premium-broker-success">
         <div className="container">
+          <div className="eyebrow">SOVARA REALTY</div>
 
-          <div className="eyebrow">
-            SOVARA REALTY
-          </div>
-
-          <div className="broker-success-number">
-            03
-          </div>
+          <div className="broker-success-number">02</div>
 
           <h1 className="serif">
             Application
@@ -75,18 +72,13 @@ export default function Brokers() {
           </h1>
 
           <p>
-            Thank you for your interest in partnering with
-            SOVARA. Our team will review your application
-            and get in touch with you.
+            Thank you for your interest in joining the SOVARA broker network.
+            Our team will review your details and get in touch with you.
           </p>
 
-          <a
-            href="/"
-            className="outline-link"
-          >
+          <a href="/" className="outline-link">
             Return Home <span>↗</span>
           </a>
-
         </div>
       </section>
     );
@@ -100,23 +92,18 @@ export default function Brokers() {
         title="Broker application submission"
       />
 
-      {/* =====================================================
-          HERO
-          ===================================================== */}
+      {/* HERO */}
+
       <section className="premium-broker-page-hero">
         <div className="container">
-
           <div className="premium-broker-page-label">
             <span>02</span>
             <span>FOR BROKERS</span>
-            <span>DELHI • NOIDA</span>
+            <span>SOVARA REALTY</span>
           </div>
 
           <div className="premium-broker-page-heading">
-
-            <div className="eyebrow">
-              BUILD WITH SOVARA
-            </div>
+            <div className="eyebrow">BROKER NETWORK</div>
 
             <h1 className="serif">
               Build Your Real Estate
@@ -125,237 +112,361 @@ export default function Brokers() {
             </h1>
 
             <p>
-              A focused partnership for independent brokers
-              looking to access selected property opportunities
-              and build trusted client relationships.
+              Join an independent broker network built around selected
+              property opportunities, professional relationships and a clear
+              transaction process.
             </p>
-
           </div>
 
-          <div className="premium-broker-hero-bottom">
-            <span>INDEPENDENT BROKER NETWORK</span>
+          <div className="premium-broker-page-hero-bottom">
             <span>SELECTED PROPERTIES</span>
-            <span>PROFESSIONAL PARTNERSHIP</span>
+            <span>INDEPENDENT BROKERS</span>
+            <span>PROFESSIONAL NETWORK</span>
           </div>
-
         </div>
       </section>
 
-      {/* =====================================================
-          PARTNERSHIP MODEL
-          ===================================================== */}
-      <section className="premium-broker-process">
-        <div className="container">
+      {/* INTRO */}
 
-          <div className="premium-broker-process-heading">
+      <section className="premium-broker-intro">
+        <div className="container premium-broker-intro-grid">
+          <div className="premium-broker-intro-side">
+            <div className="eyebrow">01 — THE OPPORTUNITY</div>
+          </div>
 
-            <div className="eyebrow">
-              THE PARTNERSHIP
-            </div>
-
+          <div className="premium-broker-intro-content">
             <h2 className="serif">
-              Simple.
+              Better properties.
               <br />
-              Transparent.
+              Better access.
               <br />
-              <em>Professional.</em>
+              Better <em>connections.</em>
             </h2>
 
             <p>
-              SOVARA works with independent brokers through
-              a straightforward relationship built around
-              selected property opportunities and clients.
+              SOVARA works with selected developers and property owners and
+              makes suitable opportunities available through an independent
+              broker network.
             </p>
 
+            <p>
+              You bring your clients and market relationships. SOVARA
+              coordinates the selected property opportunity and supervises
+              the transaction journey.
+            </p>
           </div>
-
-          <div className="premium-broker-steps">
-
-            <div className="premium-broker-step">
-              <span>01</span>
-              <h3>Join</h3>
-              <p>
-                Apply to become part of the SOVARA
-                independent broker network.
-              </p>
-            </div>
-
-            <div className="premium-broker-step">
-              <span>02</span>
-              <h3>Access</h3>
-              <p>
-                Access selected property opportunities
-                available through SOVARA.
-              </p>
-            </div>
-
-            <div className="premium-broker-step">
-              <span>03</span>
-              <h3>Connect</h3>
-              <p>
-                Bring your clients and introduce them
-                to suitable property opportunities.
-              </p>
-            </div>
-
-            <div className="premium-broker-step">
-              <span>04</span>
-              <h3>Transact</h3>
-              <p>
-                SOVARA supervises the transaction and
-                coordinates the process.
-              </p>
-            </div>
-
-            <div className="premium-broker-step">
-              <span>05</span>
-              <h3>Earn</h3>
-              <p>
-                On a successful deal, receive the
-                agreed commission.
-              </p>
-            </div>
-
-          </div>
-
         </div>
       </section>
 
-      {/* =====================================================
-          APPLICATION
-          ===================================================== */}
-      <section className="premium-broker-application">
+      {/* HOW IT WORKS */}
+
+      <section className="premium-broker-process">
         <div className="container">
+          <div className="premium-broker-process-heading">
+            <div className="eyebrow">02 — HOW IT WORKS</div>
 
-          <div className="premium-broker-application-grid">
+            <h2 className="serif">
+              A simple
+              <br />
+              <em>process.</em>
+            </h2>
+          </div>
 
-            <div className="premium-broker-application-copy">
+          <div className="premium-broker-process-steps">
+            <div className="premium-broker-process-step">
+              <span>01</span>
 
-              <div className="eyebrow">
-                BECOME A PARTNER
-              </div>
-
-              <h2 className="serif">
-                Bring your
-                <br />
-                clients.
-                <br />
-                Build with
-                <br />
-                <em>SOVARA.</em>
-              </h2>
+              <h3>Join the Network</h3>
 
               <p>
-                Tell us a little about your real-estate
-                experience and the market you operate in.
+                Submit your details and apply to work with SOVARA as an
+                independent broker.
               </p>
-
             </div>
 
-            <div className="premium-broker-form">
+            <div className="premium-broker-process-step">
+              <span>02</span>
 
-              <div className="eyebrow">
-                BROKER APPLICATION
+              <h3>Access Selected Properties</h3>
+
+              <p>
+                Explore suitable property opportunities made available
+                through the SOVARA network.
+              </p>
+            </div>
+
+            <div className="premium-broker-process-step">
+              <span>03</span>
+
+              <h3>Bring Your Clients</h3>
+
+              <p>
+                Introduce relevant opportunities to buyers from your own
+                professional network.
+              </p>
+            </div>
+
+            <div className="premium-broker-process-step">
+              <span>04</span>
+
+              <h3>Work Through the Transaction</h3>
+
+              <p>
+                SOVARA supervises the transaction process while the broker
+                continues working with the client.
+              </p>
+            </div>
+
+            <div className="premium-broker-process-step">
+              <span>05</span>
+
+              <h3>Successful Deal</h3>
+
+              <p>
+                On a successful transaction, the agreed commission arrangement
+                applies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY SOVARA */}
+
+      <section className="premium-broker-benefits">
+        <div className="container premium-broker-benefits-grid">
+          <div className="premium-broker-benefits-heading">
+            <div className="eyebrow">03 — WHY SOVARA</div>
+
+            <h2 className="serif">
+              Built for
+              <br />
+              independent
+              <br />
+              <em>brokers.</em>
+            </h2>
+          </div>
+
+          <div className="premium-broker-benefits-list">
+            <div>
+              <span>01</span>
+
+              <div>
+                <h3>Selected Opportunities</h3>
+
+                <p>
+                  Focus on selected property opportunities instead of an
+                  overcrowded property catalogue.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <span>02</span>
+
+              <div>
+                <h3>Independent Relationships</h3>
+
+                <p>
+                  Continue building and managing your own client
+                  relationships as an independent broker.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <span>03</span>
+
+              <div>
+                <h3>Clear Process</h3>
+
+                <p>
+                  Work through a defined process from property opportunity to
+                  transaction.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <span>04</span>
+
+              <div>
+                <h3>Professional Coordination</h3>
+
+                <p>
+                  SOVARA coordinates the selected opportunity and supervises
+                  the transaction journey.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* APPLICATION */}
+
+      <section className="premium-broker-application">
+        <div className="container premium-broker-application-grid">
+          <div className="premium-broker-application-copy">
+            <div className="eyebrow">04 — JOIN SOVARA</div>
+
+            <h2 className="serif">
+              Ready to build
+              <br />
+              with <em>SOVARA?</em>
+            </h2>
+
+            <p>
+              Share your details with us. Our team will review your
+              application before confirming your participation in the broker
+              network.
+            </p>
+
+            <div className="premium-broker-application-notes">
+              <div>
+                <span>01</span>
+
+                <p>
+                  Application does not automatically confirm network
+                  membership.
+                </p>
               </div>
 
-              <form
-                className="form"
-                onSubmit={handleSubmit}
-              >
+              <div>
+                <span>02</span>
+
+                <p>
+                  Broker participation and commission terms are subject to
+                  agreement with SOVARA.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="premium-broker-form-wrap">
+            <div className="eyebrow">BROKER DETAILS</div>
+
+            <form
+              className="premium-broker-form"
+              onSubmit={handleSubmit}
+            >
+              <div className="premium-broker-field">
+                <span>01</span>
 
                 <input
                   name="name"
                   placeholder="Full Name"
                   required
                 />
+              </div>
+
+              <div className="premium-broker-field">
+                <span>02</span>
 
                 <input
                   name="phone"
                   placeholder="Phone"
                   required
                 />
+              </div>
+
+              <div className="premium-broker-field">
+                <span>03</span>
 
                 <input
                   name="email"
-                  placeholder="Email"
                   type="email"
+                  placeholder="Email"
                   required
                 />
+              </div>
+
+              <div className="premium-broker-field">
+                <span>04</span>
 
                 <input
                   name="city"
                   placeholder="City"
                   required
                 />
+              </div>
 
-                <select
+              <div className="premium-broker-field">
+                <span>05</span>
+
+                <input
                   name="experience"
-                  required
-                  defaultValue=""
-                >
-                  <option value="" disabled>
-                    Experience in Real Estate
-                  </option>
-
-                  <option value="Less than 1 Year">
-                    Less than 1 Year
-                  </option>
-
-                  <option value="1–3 Years">
-                    1–3 Years
-                  </option>
-
-                  <option value="3–5 Years">
-                    3–5 Years
-                  </option>
-
-                  <option value="5+ Years">
-                    5+ Years
-                  </option>
-                </select>
-
-                <textarea
-                  name="message"
-                  placeholder="Tell us about your real-estate work"
-                  rows={6}
+                  placeholder="Real Estate Experience"
                   required
                 />
+              </div>
 
-                <button
-                  className="btn dark premium-broker-submit"
-                  type="submit"
-                >
-                  Apply as Broker
-                  <span>↗</span>
-                </button>
+              <div className="premium-broker-field premium-broker-field-message">
+                <span>06</span>
 
-              </form>
+                <textarea
+                  name="details"
+                  placeholder="Tell us about your work / client network"
+                  rows={7}
+                  required
+                />
+              </div>
 
-            </div>
-
+              <button
+                className="btn dark premium-broker-submit"
+                type="submit"
+              >
+                Apply as a Broker
+                <span>↗</span>
+              </button>
+            </form>
           </div>
-
         </div>
       </section>
 
-      {/* =====================================================
-          CLOSING
-          ===================================================== */}
-      <section className="premium-broker-closing">
-        <div className="container">
+      {/* TRANSPARENCY */}
 
-          <div className="eyebrow">
-            SOVARA REALTY
-          </div>
+      <section className="premium-broker-transparency">
+        <div className="container">
+          <div className="eyebrow">05 — TRANSPARENCY</div>
 
           <h2 className="serif">
-            Better properties.
+            Independent
             <br />
-            Better connections.
+            by nature.
             <br />
-            <em>Better business.</em>
+            <em>Connected by SOVARA.</em>
           </h2>
 
+          <div className="premium-broker-transparency-copy">
+            <p>
+              Brokers working with SOVARA remain independent professionals.
+              SOVARA provides access to selected property opportunities and
+              coordinates the relevant transaction process.
+            </p>
+
+            <p>
+              Property ownership, development and brokerage roles remain
+              distinct. Commission arrangements are agreed for successful
+              transactions and are not represented as automatic earnings.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CLOSING */}
+
+      <section className="premium-broker-closing">
+        <div className="container">
+          <div className="eyebrow">SOVARA REALTY</div>
+
+          <h2 className="serif">
+            Your network.
+            <br />
+            Your clients.
+            <br />
+            <em>One stronger connection.</em>
+          </h2>
         </div>
       </section>
     </>
