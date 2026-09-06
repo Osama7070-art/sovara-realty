@@ -2911,3 +2911,87 @@ button {
     min-height: 330px;
   }
 }
+/* =========================================================
+   SOVARA — FINAL MOBILE NAVIGATION
+   ========================================================= */
+
+.premium-mobile-menu .mobile-menu {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  color: #171717;
+  font: inherit;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  font-size: 10px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.premium-mobile-menu .menu-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.premium-mobile-menu .menu-icon-open {
+  font-size: 25px;
+}
+
+/* Bigger SOVARA branding */
+.sovara-logo-mark {
+  width: 44px !important;
+  height: 44px !important;
+}
+
+.sovara-wordmark {
+  font-size: 20px !important;
+  letter-spacing: .19em !important;
+}
+
+.sovara-wordmark > span {
+  font-size: 9px !important;
+  letter-spacing: .17em !important;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+
+  .sovara-logo-mark {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .sovara-wordmark {
+    font-size: 19px !important;
+  }
+
+  .sovara-wordmark > span {
+    font-size: 8px !important;
+  }
+
+  .premium-mobile-menu .mobile-menu {
+    font-size: 9px;
+  }
+
+  .premium-mobile-menu .menu-icon {
+    font-size: 17px;
+  }
+
+  .premium-mobile-menu .menu-icon-open {
+    font-size: 24px;
+  }
+}
