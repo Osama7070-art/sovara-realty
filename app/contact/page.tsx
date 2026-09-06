@@ -21,7 +21,7 @@ export default function Contact() {
 
     googleForm.method = "POST";
     googleForm.action =
-      "https://docs.google.com/forms/d/e/1FAIpQLSe39rB-2BQufLRfY6Q985S2yrk1jM59-RJaBQzcU2494SrqQQ/formResponse";
+      "https://docs.google.com/forms/d/e/1FAIpQLSe39rB-2BQufLRfY6Q985S2yr1kM59-RJaBQzcU2494SrqQQ/formResponse";
     googleForm.target = "google-contact-submit";
     googleForm.style.display = "none";
 
@@ -53,20 +53,26 @@ export default function Contact() {
 
   if (submitted) {
     return (
-      <section className="contact-success">
+      <section className="premium-contact-success">
         <div className="container">
           <div className="eyebrow">SOVARA REALTY</div>
 
-          <h1>
+          <div className="contact-success-number">05</div>
+
+          <h1 className="serif">
             Enquiry
             <br />
-            Received.
+            <em>Received.</em>
           </h1>
 
           <p>
-            Thank you for contacting SOVARA. Our team will review your enquiry
-            and get in touch with you.
+            Thank you for contacting SOVARA. Our team will review your
+            enquiry and get in touch with you.
           </p>
+
+          <a href="/" className="outline-link">
+            Return Home <span>↗</span>
+          </a>
         </div>
       </section>
     );
@@ -80,38 +86,51 @@ export default function Contact() {
         title="Contact form submission"
       />
 
-      <section className="contact-page-hero">
+      {/* HERO */}
+      <section className="premium-contact-hero">
         <div className="container">
-          <div className="contact-page-label">
+          <div className="premium-contact-label">
             <span>05</span>
             <span>CONTACT SOVARA</span>
+            <span>SOVARA REALTY</span>
           </div>
 
-          <h1>
-            Let&apos;s Start
-            <br />
-            a Conversation.
-          </h1>
+          <div className="premium-contact-heading">
+            <div className="eyebrow">GET IN TOUCH</div>
 
-          <p>
-            Whether you are looking for a property, representing a property,
-            or interested in joining the SOVARA network, we would be pleased
-            to hear from you.
-          </p>
+            <h1 className="serif">
+              Let&apos;s Start
+              <br />
+              a <em>Conversation.</em>
+            </h1>
+
+            <p>
+              Whether you are looking for a property, representing a
+              property, or interested in joining the SOVARA network, we
+              would be pleased to hear from you.
+            </p>
+          </div>
+
+          <div className="premium-contact-hero-bottom">
+            <span>PROPERTY ENQUIRIES</span>
+            <span>DEVELOPERS & OWNERS</span>
+            <span>BROKER NETWORK</span>
+          </div>
         </div>
       </section>
 
-      <section className="contact-main">
-        <div className="container contact-main-grid">
-          <div className="contact-intro">
-            <div className="eyebrow">GET IN TOUCH</div>
+      {/* CONTACT FORM */}
+      <section className="premium-contact-main">
+        <div className="container premium-contact-main-grid">
+          <div className="premium-contact-intro">
+            <div className="eyebrow">01 — SEND AN ENQUIRY</div>
 
-            <h2>
+            <h2 className="serif">
               The right
               <br />
               conversation
               <br />
-              starts here.
+              starts <em>here.</em>
             </h2>
 
             <p>
@@ -119,29 +138,35 @@ export default function Contact() {
               details before getting back to you.
             </p>
 
-            <div className="contact-note">
-              <span>01</span>
-              <p>
-                For property enquiries, please include the location,
-                configuration or any other requirement you already know.
-              </p>
-            </div>
+            <div className="premium-contact-notes">
+              <div>
+                <span>01</span>
+                <p>
+                  For property enquiries, please include the location,
+                  configuration or any other requirement you already know.
+                </p>
+              </div>
 
-            <div className="contact-note">
-              <span>02</span>
-              <p>
-                For developers and property owners, you can also use our
-                dedicated <strong>List Your Property</strong> page.
-              </p>
+              <div>
+                <span>02</span>
+                <p>
+                  For developers and property owners, you can also use our
+                  dedicated <strong>List Your Property</strong> page.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="contact-form-wrap">
-            <div className="eyebrow">SEND AN ENQUIRY</div>
+          <div className="premium-contact-form-wrap">
+            <div className="eyebrow">YOUR DETAILS</div>
 
-            <form className="form contact-form" onSubmit={handleSubmit}>
-              <div className="contact-field">
+            <form
+              className="premium-contact-form"
+              onSubmit={handleSubmit}
+            >
+              <div className="premium-contact-field">
                 <span>01</span>
+
                 <input
                   name="name"
                   placeholder="Full Name"
@@ -149,8 +174,9 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="contact-field">
+              <div className="premium-contact-field">
                 <span>02</span>
+
                 <input
                   name="phone"
                   placeholder="Phone"
@@ -158,8 +184,9 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="contact-field">
+              <div className="premium-contact-field">
                 <span>03</span>
+
                 <input
                   name="email"
                   type="email"
@@ -168,8 +195,9 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="contact-field contact-field-message">
+              <div className="premium-contact-field premium-contact-field-message">
                 <span>04</span>
+
                 <textarea
                   name="message"
                   placeholder="How can we help?"
@@ -179,7 +207,7 @@ export default function Contact() {
               </div>
 
               <button
-                className="btn dark contact-submit"
+                className="btn dark premium-contact-submit"
                 type="submit"
               >
                 Send Enquiry
@@ -190,16 +218,15 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="contact-transparency">
+      {/* CLOSING */}
+      <section className="premium-contact-closing">
         <div className="container">
           <div className="eyebrow">SOVARA REALTY</div>
 
-          <h2>
+          <h2 className="serif">
             Property is personal.
             <br />
-            The connection
-            <br />
-            should be trusted.
+            <em>The connection should be trusted.</em>
           </h2>
         </div>
       </section>
