@@ -2790,3 +2790,18 @@
 .premium-mobile-menu summary::-webkit-details-marker {
   display: none;
 }
+/* MENU ICON — CLOSED / OPEN */
+.premium-mobile-menu .menu-icon {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.premium-mobile-menu[open] .menu-icon {
+  font-size: 0;
+}
+
+.premium-mobile-menu[open] .menu-icon::after {
+  content: "×";
+  font-size: 20px;
+  font-weight: 300;
+}
