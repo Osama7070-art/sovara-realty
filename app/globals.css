@@ -2805,3 +2805,74 @@
   font-size: 20px;
   font-weight: 300;
 }
+/* =====================================================
+   SOVARA — TOUCH DEVICES
+   Keep mobile navigation on phones even in
+   Chrome "Desktop site" mode
+   ===================================================== */
+
+@media (hover: none) and (pointer: coarse) {
+
+  .premium-nav {
+    height: 70px;
+  }
+
+  .premium-nav-inner {
+    position: relative;
+  }
+
+  /* Mobile-style centered branding */
+  .premium-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .sovara-logo-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sovara-wordmark {
+    font-size: 17px;
+    letter-spacing: 0.18em;
+    gap: 6px;
+  }
+
+  .sovara-wordmark > span {
+    font-size: 7px;
+    letter-spacing: 0.15em;
+  }
+
+  /* Hide desktop links */
+  .premium-nav-links {
+    display: none;
+  }
+
+  /* Show MENU */
+  .premium-mobile-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Menu panel */
+  .premium-mobile-panel {
+    top: 70px;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+
+  .premium-mobile-menu[open] .premium-mobile-panel {
+    display: grid;
+  }
+
+}
