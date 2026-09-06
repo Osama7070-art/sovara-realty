@@ -6857,3 +6857,894 @@ button {
     line-height: .94;
   }
 }
+/* =========================================================
+   SOVARA — FOR BROKERS / STEP 11B
+   ========================================================= */
+
+.premium-broker-success {
+  min-height: 75vh;
+  padding: 150px 0;
+  background: #f7f6f2;
+  color: #171717;
+}
+
+.premium-broker-success .eyebrow {
+  margin-bottom: 35px;
+  color: #777;
+}
+
+.broker-success-number {
+  margin-bottom: 22px;
+  color: #999;
+  font-size: 9px;
+  letter-spacing: .18em;
+}
+
+.premium-broker-success h1 {
+  max-width: 900px;
+  margin: 0 0 35px;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 8vw, 112px);
+  font-weight: 400;
+  line-height: .88;
+  letter-spacing: -.055em;
+}
+
+.premium-broker-success h1 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-broker-success p {
+  max-width: 440px;
+  margin: 0 0 32px;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   HERO
+   --------------------------------------------------------- */
+
+.premium-broker-page-hero {
+  background: #f7f6f2;
+  color: #171717;
+  padding: 70px 0 0;
+}
+
+.premium-broker-page-hero .container {
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.premium-broker-page-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d8d6cf;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.premium-broker-page-heading {
+  max-width: 1120px;
+  padding: 105px 0 80px;
+}
+
+.premium-broker-page-heading .eyebrow {
+  margin-bottom: 24px;
+  color: #777;
+}
+
+.premium-broker-page-heading h1 {
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(68px, 9.5vw, 138px);
+  font-weight: 400;
+  line-height: .84;
+  letter-spacing: -.065em;
+}
+
+.premium-broker-page-heading h1 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-broker-page-heading p {
+  max-width: 520px;
+  margin: 45px 0 0;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.premium-broker-page-hero-bottom {
+  margin-top: auto;
+  padding: 18px 0 22px;
+  border-top: 1px solid #d8d6cf;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 8px;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------
+   INTRO
+   --------------------------------------------------------- */
+
+.premium-broker-intro {
+  background: #eeece6;
+  color: #171717;
+  padding: 135px 0 150px;
+}
+
+.premium-broker-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, .35fr) minmax(0, 1fr);
+  gap: 90px;
+}
+
+.premium-broker-intro-side .eyebrow {
+  color: #777;
+}
+
+.premium-broker-intro-content h2 {
+  max-width: 900px;
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 6.8vw, 94px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.05em;
+}
+
+.premium-broker-intro-content h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-broker-intro-content p {
+  max-width: 610px;
+  margin: 45px 0 0;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.premium-broker-intro-content p + p {
+  margin-top: 22px;
+}
+
+
+/* ---------------------------------------------------------
+   PROCESS
+   --------------------------------------------------------- */
+
+.premium-broker-process {
+  background: #171717;
+  color: #f7f6f2;
+  padding: 130px 0 140px;
+}
+
+.premium-broker-process-heading {
+  display: grid;
+  grid-template-columns: minmax(180px, .35fr) minmax(0, 1fr);
+  gap: 90px;
+}
+
+.premium-broker-process-heading .eyebrow {
+  color: #aaa8a1;
+}
+
+.premium-broker-process-heading h2 {
+  max-width: 800px;
+  margin: 0;
+  color: #f7f6f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 6.8vw, 94px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.05em;
+}
+
+.premium-broker-process-heading h2 em {
+  color: #c5a56d;
+  font-style: italic;
+}
+
+.premium-broker-process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 100px;
+  border-top: 1px solid rgba(247,246,242,.22);
+}
+
+.premium-broker-process-step {
+  min-height: 310px;
+  padding: 24px 25px 30px 0;
+  border-right: 1px solid rgba(247,246,242,.22);
+}
+
+.premium-broker-process-step + .premium-broker-process-step {
+  padding-left: 25px;
+}
+
+.premium-broker-process-step:last-child {
+  border-right: 0;
+}
+
+.premium-broker-process-step > span {
+  color: #99968e;
+  font-size: 9px;
+  letter-spacing: .14em;
+}
+
+.premium-broker-process-step h3 {
+  margin: 62px 0 18px;
+  color: #f7f6f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.premium-broker-process-step p {
+  max-width: 205px;
+  margin: 0;
+  color: #aaa8a1;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   BENEFITS
+   --------------------------------------------------------- */
+
+.premium-broker-benefits {
+  background: #f7f6f2;
+  color: #171717;
+  padding: 140px 0 150px;
+}
+
+.premium-broker-benefits-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, .75fr) minmax(0, 1.25fr);
+  gap: 100px;
+}
+
+.premium-broker-benefits-heading .eyebrow {
+  margin-bottom: 25px;
+  color: #777;
+}
+
+.premium-broker-benefits-heading h2 {
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 7vw, 96px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.055em;
+}
+
+.premium-broker-benefits-heading h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-broker-benefits-list {
+  border-top: 1px solid #d1cfc8;
+}
+
+.premium-broker-benefits-list > div {
+  display: grid;
+  grid-template-columns: 55px minmax(0, 1fr);
+  gap: 20px;
+  padding: 28px 0 30px;
+  border-bottom: 1px solid #d1cfc8;
+}
+
+.premium-broker-benefits-list > div > span {
+  color: #999;
+  font-size: 9px;
+  letter-spacing: .13em;
+}
+
+.premium-broker-benefits-list h3 {
+  margin: 0 0 13px;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.premium-broker-benefits-list p {
+  max-width: 510px;
+  margin: 0;
+  color: #666560;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   APPLICATION
+   --------------------------------------------------------- */
+
+.premium-broker-application {
+  background: #eeece6;
+  color: #171717;
+  padding: 135px 0 150px;
+}
+
+.premium-broker-application-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr);
+  gap: 100px;
+  align-items: start;
+}
+
+.premium-broker-application-copy {
+  position: sticky;
+  top: 110px;
+}
+
+.premium-broker-application-copy .eyebrow,
+.premium-broker-form-wrap > .eyebrow {
+  color: #777;
+}
+
+.premium-broker-application-copy h2 {
+  margin: 20px 0 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 6.5vw, 88px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.05em;
+}
+
+.premium-broker-application-copy h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-broker-application-copy > p {
+  max-width: 390px;
+  margin: 38px 0 0;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   APPLICATION NOTES
+   --------------------------------------------------------- */
+
+.premium-broker-application-notes {
+  max-width: 430px;
+  margin-top: 65px;
+  border-top: 1px solid #d1cfc8;
+}
+
+.premium-broker-application-notes > div {
+  display: grid;
+  grid-template-columns: 45px minmax(0, 1fr);
+  gap: 15px;
+  padding: 19px 0;
+  border-bottom: 1px solid #d1cfc8;
+}
+
+.premium-broker-application-notes span {
+  color: #999;
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+
+.premium-broker-application-notes p {
+  margin: 0;
+  color: #666560;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+
+/* ---------------------------------------------------------
+   FORM
+   --------------------------------------------------------- */
+
+.premium-broker-form-wrap {
+  min-width: 0;
+}
+
+.premium-broker-form {
+  margin-top: 25px;
+  border-top: 1px solid #d1cfc8;
+}
+
+.premium-broker-field {
+  display: grid;
+  grid-template-columns: 45px minmax(0, 1fr);
+  align-items: center;
+  min-height: 76px;
+  border-bottom: 1px solid #d1cfc8;
+}
+
+.premium-broker-field > span {
+  color: #999;
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+
+.premium-broker-field input,
+.premium-broker-field textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #171717;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.premium-broker-field input {
+  height: 52px;
+}
+
+.premium-broker-field textarea {
+  min-height: 155px;
+  padding: 18px 0;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.premium-broker-field input::placeholder,
+.premium-broker-field textarea::placeholder {
+  color: #8a8882;
+  opacity: 1;
+}
+
+.premium-broker-field-message {
+  align-items: start;
+  padding-top: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   SUBMIT
+   --------------------------------------------------------- */
+
+.premium-broker-submit {
+  width: 100%;
+  min-height: 58px;
+  margin-top: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #171717;
+  background: #171717;
+  color: #f7f6f2;
+  font-size: 10px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background .25s ease,
+    color .25s ease;
+}
+
+.premium-broker-submit span {
+  transition: transform .25s ease;
+}
+
+.premium-broker-submit:hover {
+  background: transparent;
+  color: #171717;
+}
+
+.premium-broker-submit:hover span {
+  transform: translate(3px, -3px);
+}
+
+
+/* ---------------------------------------------------------
+   TRANSPARENCY
+   --------------------------------------------------------- */
+
+.premium-broker-transparency {
+  background: #f7f6f2;
+  color: #171717;
+  padding: 140px 0 150px;
+  border-top: 1px solid #d9d7d0;
+}
+
+.premium-broker-transparency > .container > .eyebrow {
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.premium-broker-transparency h2 {
+  max-width: 1050px;
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(60px, 7.5vw, 104px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.055em;
+}
+
+.premium-broker-transparency h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-broker-transparency-copy {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 70px;
+  max-width: 800px;
+  margin: 65px 0 0 auto;
+}
+
+.premium-broker-transparency-copy p {
+  margin: 0;
+  color: #666560;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+
+/* ---------------------------------------------------------
+   CLOSING
+   --------------------------------------------------------- */
+
+.premium-broker-closing {
+  background: #171717;
+  color: #f7f6f2;
+  padding: 145px 0 155px;
+}
+
+.premium-broker-closing .eyebrow {
+  margin-bottom: 28px;
+  color: #aaa8a1;
+}
+
+.premium-broker-closing h2 {
+  max-width: 1050px;
+  margin: 0;
+  color: #f7f6f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 7vw, 98px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.055em;
+}
+
+.premium-broker-closing h2 em {
+  color: #c5a56d;
+  font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  /* SUCCESS */
+
+  .premium-broker-success {
+    min-height: 70vh;
+    padding: 100px 0;
+  }
+
+  .premium-broker-success h1 {
+    font-size: clamp(52px, 14vw, 70px);
+    line-height: .92;
+  }
+
+  .premium-broker-success p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+
+  /* HERO */
+
+  .premium-broker-page-hero {
+    padding: 48px 0 0;
+  }
+
+  .premium-broker-page-hero .container {
+    min-height: 570px;
+  }
+
+  .premium-broker-page-label {
+    padding-bottom: 18px;
+    font-size: 8px;
+  }
+
+  .premium-broker-page-label span:nth-child(2) {
+    display: none;
+  }
+
+  .premium-broker-page-heading {
+    padding: 78px 0 55px;
+  }
+
+  .premium-broker-page-heading .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .premium-broker-page-heading h1 {
+    font-size: clamp(55px, 15vw, 74px);
+    line-height: .88;
+  }
+
+  .premium-broker-page-heading p {
+    max-width: 100%;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-broker-page-hero-bottom {
+    padding: 16px 0 19px;
+  }
+
+  .premium-broker-page-hero-bottom span:nth-child(2) {
+    display: none;
+  }
+
+  .premium-broker-page-hero-bottom span {
+    font-size: 8px;
+  }
+
+
+  /* INTRO */
+
+  .premium-broker-intro {
+    padding: 85px 0 95px;
+  }
+
+  .premium-broker-intro-grid {
+    display: block;
+  }
+
+  .premium-broker-intro-side {
+    margin-bottom: 30px;
+  }
+
+  .premium-broker-intro-content h2 {
+    font-size: clamp(48px, 14vw, 66px);
+    line-height: .92;
+  }
+
+  .premium-broker-intro-content p {
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-broker-intro-content p + p {
+    margin-top: 20px;
+  }
+
+
+  /* PROCESS */
+
+  .premium-broker-process {
+    padding: 88px 0 95px;
+  }
+
+  .premium-broker-process-heading {
+    display: block;
+  }
+
+  .premium-broker-process-heading .eyebrow {
+    margin-bottom: 30px;
+  }
+
+  .premium-broker-process-heading h2 {
+    font-size: clamp(48px, 14vw, 66px);
+    line-height: .92;
+  }
+
+  .premium-broker-process-steps {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .premium-broker-process-step {
+    min-height: 0;
+    padding: 22px 0 28px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(247,246,242,.22);
+  }
+
+  .premium-broker-process-step + .premium-broker-process-step {
+    padding-left: 0;
+  }
+
+  .premium-broker-process-step:last-child {
+    border-bottom: 0;
+  }
+
+  .premium-broker-process-step h3 {
+    margin: 30px 0 12px;
+    font-size: 23px;
+  }
+
+  .premium-broker-process-step p {
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+
+  /* BENEFITS */
+
+  .premium-broker-benefits {
+    padding: 90px 0 100px;
+  }
+
+  .premium-broker-benefits-grid {
+    display: block;
+  }
+
+  .premium-broker-benefits-heading .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-broker-benefits-heading h2 {
+    font-size: clamp(50px, 14vw, 68px);
+    line-height: .92;
+  }
+
+  .premium-broker-benefits-list {
+    margin-top: 55px;
+  }
+
+  .premium-broker-benefits-list > div {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 15px;
+    padding: 22px 0 25px;
+  }
+
+  .premium-broker-benefits-list h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .premium-broker-benefits-list p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+
+  /* APPLICATION */
+
+  .premium-broker-application {
+    padding: 88px 0 100px;
+  }
+
+  .premium-broker-application-grid {
+    display: block;
+  }
+
+  .premium-broker-application-copy {
+    position: static;
+  }
+
+  .premium-broker-application-copy h2 {
+    margin-top: 15px;
+    font-size: clamp(48px, 13vw, 64px);
+    line-height: .93;
+  }
+
+  .premium-broker-application-copy > p {
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-broker-application-notes {
+    margin-top: 45px;
+  }
+
+  .premium-broker-application-notes > div {
+    grid-template-columns: 40px minmax(0, 1fr);
+    padding: 17px 0;
+  }
+
+  .premium-broker-form-wrap {
+    margin-top: 70px;
+  }
+
+  .premium-broker-form {
+    margin-top: 22px;
+  }
+
+  .premium-broker-field {
+    grid-template-columns: 38px minmax(0, 1fr);
+    min-height: 68px;
+  }
+
+  .premium-broker-field input,
+  .premium-broker-field textarea {
+    font-size: 13px;
+  }
+
+  .premium-broker-field textarea {
+    min-height: 125px;
+  }
+
+  .premium-broker-submit {
+    min-height: 56px;
+    margin-top: 22px;
+  }
+
+
+  /* TRANSPARENCY */
+
+  .premium-broker-transparency {
+    padding: 88px 0 100px;
+  }
+
+  .premium-broker-transparency > .container > .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-broker-transparency h2 {
+    font-size: clamp(50px, 14vw, 68px);
+    line-height: .92;
+  }
+
+  .premium-broker-transparency-copy {
+    display: block;
+    margin: 42px 0 0;
+  }
+
+  .premium-broker-transparency-copy p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-broker-transparency-copy p + p {
+    margin-top: 22px;
+  }
+
+
+  /* CLOSING */
+
+  .premium-broker-closing {
+    padding: 88px 0 100px;
+  }
+
+  .premium-broker-closing .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-broker-closing h2 {
+    font-size: clamp(48px, 13vw, 64px);
+    line-height: .94;
+  }
+}
