@@ -5092,3 +5092,574 @@ button {
     line-height: .92;
   }
 }
+/* =========================================================
+   SOVARA — LIST YOUR PROPERTY / STEP 8B
+   ========================================================= */
+
+.premium-listing-success {
+  min-height: 75vh;
+  padding: 150px 0;
+  background: #f7f6f2;
+  color: #171717;
+}
+
+.premium-listing-success .eyebrow {
+  color: #777;
+  margin-bottom: 35px;
+}
+
+.listing-success-number {
+  margin-bottom: 22px;
+  color: #999;
+  font-size: 9px;
+  letter-spacing: .18em;
+}
+
+.premium-listing-success h1 {
+  max-width: 900px;
+  margin: 0 0 35px;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 8vw, 112px);
+  font-weight: 400;
+  line-height: .88;
+  letter-spacing: -.055em;
+}
+
+.premium-listing-success h1 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-listing-success p {
+  max-width: 420px;
+  margin: 0 0 32px;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   HERO
+   --------------------------------------------------------- */
+
+.premium-listing-hero {
+  background: #f7f6f2;
+  color: #171717;
+  padding: 70px 0 0;
+}
+
+.premium-listing-hero .container {
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+}
+
+.premium-listing-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d8d6cf;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.premium-listing-heading {
+  max-width: 1050px;
+  padding: 105px 0 80px;
+}
+
+.premium-listing-heading .eyebrow {
+  margin-bottom: 24px;
+  color: #777;
+}
+
+.premium-listing-heading h1 {
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(70px, 10vw, 140px);
+  font-weight: 400;
+  line-height: .84;
+  letter-spacing: -.065em;
+}
+
+.premium-listing-heading h1 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-listing-heading p {
+  max-width: 470px;
+  margin: 45px 0 0;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.premium-listing-hero-bottom {
+  margin-top: auto;
+  padding: 18px 0 22px;
+  border-top: 1px solid #d8d6cf;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 8px;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------
+   INTRO
+   --------------------------------------------------------- */
+
+.premium-listing-intro {
+  background: #eeece6;
+  color: #171717;
+  padding: 125px 0 135px;
+}
+
+.premium-listing-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, .35fr) minmax(0, 1fr);
+  gap: 90px;
+}
+
+.premium-listing-intro-grid > .eyebrow {
+  color: #777;
+}
+
+.premium-listing-intro-grid h2 {
+  max-width: 850px;
+  margin: 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 6.8vw, 94px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.05em;
+}
+
+.premium-listing-intro-grid h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-listing-intro-grid p {
+  max-width: 440px;
+  margin: 42px 0 0;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+
+/* ---------------------------------------------------------
+   APPLICATION
+   --------------------------------------------------------- */
+
+.premium-listing-application {
+  background: #f7f6f2;
+  color: #171717;
+  padding: 135px 0 150px;
+}
+
+.premium-listing-application-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr);
+  gap: 100px;
+  align-items: start;
+}
+
+.premium-listing-copy {
+  position: sticky;
+  top: 110px;
+}
+
+.premium-listing-copy .eyebrow,
+.premium-listing-form-wrap > .eyebrow {
+  color: #777;
+}
+
+.premium-listing-copy h2 {
+  margin: 20px 0 0;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 6.5vw, 88px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.05em;
+}
+
+.premium-listing-copy h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-listing-copy > p {
+  max-width: 390px;
+  margin: 38px 0 0;
+  color: #666560;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   NOTES
+   --------------------------------------------------------- */
+
+.premium-listing-notes {
+  max-width: 430px;
+  margin-top: 65px;
+  border-top: 1px solid #d1cfc8;
+}
+
+.premium-listing-notes > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+  padding: 19px 0;
+  border-bottom: 1px solid #d1cfc8;
+}
+
+.premium-listing-notes span {
+  color: #999;
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+
+.premium-listing-notes p {
+  margin: 0;
+  color: #666560;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+
+/* ---------------------------------------------------------
+   FORM
+   --------------------------------------------------------- */
+
+.premium-listing-form-wrap {
+  min-width: 0;
+}
+
+.premium-listing-form {
+  margin-top: 25px;
+  border-top: 1px solid #d1cfc8;
+}
+
+.premium-listing-field {
+  display: grid;
+  grid-template-columns: 45px minmax(0, 1fr);
+  align-items: center;
+  min-height: 76px;
+  border-bottom: 1px solid #d1cfc8;
+}
+
+.premium-listing-field > span {
+  color: #999;
+  font-size: 9px;
+  letter-spacing: .12em;
+}
+
+.premium-listing-field input,
+.premium-listing-field textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #171717;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.premium-listing-field input {
+  height: 52px;
+}
+
+.premium-listing-field textarea {
+  min-height: 145px;
+  padding: 18px 0;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.premium-listing-field input::placeholder,
+.premium-listing-field textarea::placeholder {
+  color: #8a8882;
+  opacity: 1;
+}
+
+.premium-listing-field input:focus,
+.premium-listing-field textarea:focus {
+  color: #171717;
+}
+
+.premium-listing-field-message {
+  align-items: start;
+  padding-top: 12px;
+}
+
+
+/* ---------------------------------------------------------
+   SUBMIT
+   --------------------------------------------------------- */
+
+.premium-listing-submit {
+  width: 100%;
+  min-height: 58px;
+  margin-top: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #171717;
+  background: #171717;
+  color: #f7f6f2;
+  font-size: 10px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background .25s ease,
+    color .25s ease;
+}
+
+.premium-listing-submit span {
+  transition: transform .25s ease;
+}
+
+.premium-listing-submit:hover {
+  background: transparent;
+  color: #171717;
+}
+
+.premium-listing-submit:hover span {
+  transform: translate(3px, -3px);
+}
+
+
+/* ---------------------------------------------------------
+   CLOSING
+   --------------------------------------------------------- */
+
+.premium-listing-closing {
+  background: #171717;
+  color: #f7f6f2;
+  padding: 140px 0 150px;
+}
+
+.premium-listing-closing .eyebrow {
+  margin-bottom: 28px;
+  color: #aaa8a1;
+}
+
+.premium-listing-closing h2 {
+  max-width: 1000px;
+  margin: 0;
+  color: #f7f6f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(55px, 7vw, 96px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.05em;
+}
+
+.premium-listing-closing h2 em {
+  color: #c5a56d;
+  font-style: italic;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .premium-listing-success {
+    min-height: 70vh;
+    padding: 100px 0;
+  }
+
+  .premium-listing-success h1 {
+    font-size: clamp(52px, 14vw, 70px);
+    line-height: .92;
+  }
+
+  .premium-listing-success p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+
+  /* HERO */
+
+  .premium-listing-hero {
+    padding: 48px 0 0;
+  }
+
+  .premium-listing-hero .container {
+    min-height: 570px;
+  }
+
+  .premium-listing-label {
+    padding-bottom: 18px;
+    font-size: 8px;
+  }
+
+  .premium-listing-label span:nth-child(2) {
+    display: none;
+  }
+
+  .premium-listing-heading {
+    padding: 78px 0 55px;
+  }
+
+  .premium-listing-heading .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .premium-listing-heading h1 {
+    font-size: clamp(58px, 16vw, 76px);
+    line-height: .88;
+  }
+
+  .premium-listing-heading p {
+    max-width: 100%;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-listing-hero-bottom {
+    padding: 16px 0 19px;
+  }
+
+  .premium-listing-hero-bottom span:nth-child(2) {
+    display: none;
+  }
+
+  .premium-listing-hero-bottom span {
+    font-size: 8px;
+  }
+
+
+  /* INTRO */
+
+  .premium-listing-intro {
+    padding: 82px 0 95px;
+  }
+
+  .premium-listing-intro-grid {
+    display: block;
+  }
+
+  .premium-listing-intro-grid > .eyebrow {
+    margin-bottom: 30px;
+  }
+
+  .premium-listing-intro-grid h2 {
+    font-size: clamp(48px, 14vw, 66px);
+    line-height: .92;
+  }
+
+  .premium-listing-intro-grid p {
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+
+  /* APPLICATION */
+
+  .premium-listing-application {
+    padding: 88px 0 100px;
+  }
+
+  .premium-listing-application-grid {
+    display: block;
+  }
+
+  .premium-listing-copy {
+    position: static;
+  }
+
+  .premium-listing-copy h2 {
+    margin-top: 15px;
+    font-size: clamp(48px, 13vw, 64px);
+    line-height: .93;
+  }
+
+  .premium-listing-copy > p {
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+
+  /* NOTES */
+
+  .premium-listing-notes {
+    margin-top: 45px;
+  }
+
+  .premium-listing-notes > div {
+    grid-template-columns: 40px 1fr;
+    padding: 17px 0;
+  }
+
+
+  /* FORM */
+
+  .premium-listing-form-wrap {
+    margin-top: 70px;
+  }
+
+  .premium-listing-form {
+    margin-top: 22px;
+  }
+
+  .premium-listing-field {
+    grid-template-columns: 38px minmax(0, 1fr);
+    min-height: 68px;
+  }
+
+  .premium-listing-field input,
+  .premium-listing-field textarea {
+    font-size: 13px;
+  }
+
+  .premium-listing-field textarea {
+    min-height: 125px;
+  }
+
+  .premium-listing-submit {
+    min-height: 56px;
+    margin-top: 22px;
+  }
+
+
+  /* CLOSING */
+
+  .premium-listing-closing {
+    padding: 88px 0 100px;
+  }
+
+  .premium-listing-closing .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-listing-closing h2 {
+    font-size: clamp(48px, 13vw, 64px);
+    line-height: .94;
+  }
+}
