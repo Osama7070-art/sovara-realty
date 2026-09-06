@@ -8440,3 +8440,237 @@ footer {
     width: calc(100vw - 22px);
   }
 }
+/* =========================================================
+   SOVARA — MOBILE AUDIT / HOME / STEP 12C
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  /* -------------------------------------------------------
+     HOME HERO
+     ------------------------------------------------------- */
+
+  .premium-hero-content {
+    padding: 44px 24px 38px;
+  }
+
+  .premium-hero .hero-topline {
+    font-size: 8px;
+    letter-spacing: .15em;
+  }
+
+  .premium-hero .hero-copy {
+    margin-top: 52px;
+  }
+
+  .premium-hero .eyebrow {
+    font-size: 8px;
+    letter-spacing: .17em;
+  }
+
+  .premium-hero h1 {
+    max-width: 100%;
+    margin-top: 14px;
+    font-size: clamp(46px, 13.5vw, 64px);
+    line-height: .92;
+    letter-spacing: -.055em;
+  }
+
+  .premium-hero p {
+    max-width: 360px;
+    margin-top: 25px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-hero .actions {
+    margin-top: 27px;
+    gap: 9px;
+  }
+
+  .premium-hero .btn.light {
+    width: 100%;
+    min-height: 56px;
+  }
+
+  .hero-text-link {
+    min-height: 42px;
+    justify-content: center;
+  }
+
+  .premium-hero .hero-bottom {
+    margin-top: 48px;
+    padding-top: 18px;
+  }
+
+  .premium-hero .hero-bg {
+    height: 50vh;
+    min-height: 310px;
+  }
+
+
+  /* -------------------------------------------------------
+     FEATURED PROPERTIES
+     ------------------------------------------------------- */
+
+  .premium-properties-section {
+    padding: 78px 0 90px;
+  }
+
+  .premium-section-head {
+    margin-bottom: 42px;
+  }
+
+  .premium-section-head h2 {
+    max-width: 100%;
+    font-size: clamp(47px, 13.5vw, 64px);
+    line-height: .92;
+    letter-spacing: -.05em;
+  }
+
+  .section-side {
+    margin-top: 27px;
+  }
+
+  .section-side .muted {
+    max-width: 360px;
+    margin-bottom: 21px;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .premium-property-grid {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+
+  .premium-card-image-wrap {
+    aspect-ratio: 1.18;
+  }
+
+  .premium-card-status {
+    top: 11px;
+    left: 11px;
+    padding: 8px 10px;
+    font-size: 7px;
+  }
+
+  .premium-card-arrow {
+    right: 11px;
+    bottom: 11px;
+    width: 39px;
+    height: 39px;
+    font-size: 15px;
+  }
+
+  .premium-card-body {
+    padding-top: 17px;
+  }
+
+  .premium-card-location {
+    margin-bottom: 8px;
+    font-size: 8px;
+  }
+
+  .premium-card-body h3 {
+    font-size: 26px;
+    line-height: 1.08;
+  }
+
+  .premium-card-meta {
+    margin-top: 15px;
+    padding-top: 13px;
+  }
+
+  .premium-card-meta span {
+    font-size: 9px;
+    padding-right: 11px;
+    margin-right: 11px;
+  }
+
+  .premium-card-link {
+    margin-top: 17px;
+    font-size: 8px;
+  }
+
+
+  /* -------------------------------------------------------
+     BROKER CTA
+     ------------------------------------------------------- */
+
+  .premium-broker-section {
+    padding: 78px 0 84px;
+  }
+
+  .broker-content {
+    padding-top: 48px;
+  }
+
+  .premium-broker-section h2 {
+    max-width: 100%;
+    font-size: clamp(45px, 13vw, 62px);
+    line-height: .94;
+  }
+
+  .broker-copy {
+    margin-top: 38px;
+  }
+
+  .broker-copy p {
+    max-width: 360px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-broker-section .btn.light {
+    width: 100%;
+    min-height: 56px;
+  }
+
+
+  /* -------------------------------------------------------
+     FINAL HOME CTA
+     ------------------------------------------------------- */
+
+  .premium-closing-section {
+    padding: 86px 0 96px;
+  }
+
+  .premium-closing-section h2 {
+    max-width: 100%;
+    margin-bottom: 34px;
+    font-size: clamp(45px, 13vw, 62px);
+    line-height: .94;
+  }
+
+  .premium-closing-section .outline-link {
+    min-height: 42px;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+
+  .premium-hero h1 {
+    font-size: 45px;
+  }
+
+  .premium-section-head h2,
+  .premium-broker-section h2,
+  .premium-closing-section h2 {
+    font-size: 44px;
+  }
+
+  .premium-card-body h3 {
+    font-size: 24px;
+  }
+
+  .premium-card-meta span {
+    font-size: 8px;
+  }
+}
