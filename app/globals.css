@@ -3670,3 +3670,73 @@ button {
     min-height: 56px;
   }
 }
+/* =========================================================
+   SOVARA — FINAL CLOSING SECTION
+   ========================================================= */
+
+.premium-closing-section {
+  background: #f7f6f2;
+  color: #171717;
+  padding: 145px 0 155px;
+  border-top: 1px solid #d9d7d0;
+}
+
+.premium-closing-section .eyebrow {
+  color: #777;
+  margin-bottom: 28px;
+}
+
+.premium-closing-section h2 {
+  max-width: 1050px;
+  margin: 0 0 48px;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(52px, 7vw, 96px);
+  font-weight: 400;
+  line-height: .92;
+  letter-spacing: -.05em;
+}
+
+.premium-closing-section h2 em {
+  color: #777;
+  font-style: italic;
+}
+
+.premium-closing-section .outline-link {
+  margin-top: 4px;
+}
+
+/* =========================================================
+   HOMEPAGE FINAL SPACING POLISH
+   ========================================================= */
+
+.premium-properties-section + .premium-broker-section {
+  margin-top: 0;
+}
+
+.premium-broker-section + .premium-closing-section {
+  margin-top: 0;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .premium-closing-section {
+    padding: 88px 0 100px;
+  }
+
+  .premium-closing-section .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-closing-section h2 {
+    margin-bottom: 38px;
+    font-size: clamp(46px, 13vw, 62px);
+    line-height: .94;
+    letter-spacing: -.04em;
+  }
+
+}
