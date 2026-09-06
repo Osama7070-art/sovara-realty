@@ -9107,3 +9107,249 @@ footer {
     padding-right: 22px !important;
   }
 }
+/* =========================================================
+   SOVARA — TYPOGRAPHY & READABILITY POLISH / STEP 12D
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   GLOBAL SMALL TEXT
+   --------------------------------------------------------- */
+
+.eyebrow {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: .16em !important;
+  line-height: 1.4;
+}
+
+.muted {
+  font-weight: 400;
+}
+
+
+/* ---------------------------------------------------------
+   NAVIGATION
+   --------------------------------------------------------- */
+
+.premium-nav-links a {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: .12em !important;
+}
+
+
+/* ---------------------------------------------------------
+   HERO MICRO TEXT
+   --------------------------------------------------------- */
+
+.hero-topline,
+.hero-bottom {
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: .16em !important;
+}
+
+
+/* ---------------------------------------------------------
+   PROPERTY CARD
+   --------------------------------------------------------- */
+
+.premium-card-location {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: .15em !important;
+}
+
+.premium-card-meta span {
+  font-size: 10px !important;
+  font-weight: 500 !important;
+}
+
+.premium-card-status {
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: .13em !important;
+}
+
+.premium-card-link {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: .12em !important;
+}
+
+
+/* ---------------------------------------------------------
+   SECTION / PAGE LABELS
+   --------------------------------------------------------- */
+
+.properties-page-label,
+.premium-listing-label,
+.premium-about-label,
+.premium-contact-label,
+.premium-broker-page-label {
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: .16em !important;
+}
+
+
+/* ---------------------------------------------------------
+   PAGE HERO BOTTOM LABELS
+   --------------------------------------------------------- */
+
+.properties-hero-bottom,
+.premium-listing-hero-bottom,
+.premium-about-hero-bottom,
+.premium-contact-hero-bottom,
+.premium-broker-page-hero-bottom {
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: .15em !important;
+}
+
+
+/* ---------------------------------------------------------
+   SECTION SIDE / SUPPORTING COPY
+   --------------------------------------------------------- */
+
+.section-side .muted,
+.properties-list-intro p {
+  color: #5f5e59 !important;
+}
+
+
+/* ---------------------------------------------------------
+   LINKS
+   --------------------------------------------------------- */
+
+.outline-link {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: .12em !important;
+}
+
+
+/* ---------------------------------------------------------
+   DARK SECTIONS
+   --------------------------------------------------------- */
+
+.premium-broker-section .eyebrow,
+.premium-broker-closing .eyebrow,
+.premium-about-closing .eyebrow,
+.premium-contact-closing .eyebrow,
+.premium-listing-closing .eyebrow {
+  color: #b7b5ae !important;
+}
+
+
+/* ---------------------------------------------------------
+   BROKER / ABOUT / PROCESS MICRO LABELS
+   --------------------------------------------------------- */
+
+.broker-label,
+.premium-about-model-step > span,
+.premium-broker-process-step > span,
+.premium-broker-benefits-list > div > span {
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: .13em !important;
+}
+
+
+/* ---------------------------------------------------------
+   FORM FIELD NUMBERS
+   --------------------------------------------------------- */
+
+.premium-contact-field > span,
+.premium-broker-field > span,
+.premium-listing-field > span {
+  font-size: 9px !important;
+  font-weight: 600 !important;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------- */
+
+.footer-col h4 {
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: .15em !important;
+}
+
+.footer-col a {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+}
+
+.footer-bottom {
+  font-size: 9px !important;
+  font-weight: 500 !important;
+  letter-spacing: .1em !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .eyebrow {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+    letter-spacing: .15em !important;
+  }
+
+  .hero-topline,
+  .hero-bottom {
+    font-size: 8px !important;
+    font-weight: 600 !important;
+  }
+
+  .premium-card-location {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+  }
+
+  .premium-card-meta span {
+    font-size: 9px !important;
+    font-weight: 500 !important;
+  }
+
+  .premium-card-status {
+    font-size: 8px !important;
+    font-weight: 600 !important;
+  }
+
+  .premium-card-link,
+  .outline-link {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+  }
+
+  .properties-page-label,
+  .premium-listing-label,
+  .premium-about-label,
+  .premium-contact-label,
+  .premium-broker-page-label,
+  .properties-hero-bottom,
+  .premium-listing-hero-bottom,
+  .premium-about-hero-bottom,
+  .premium-contact-hero-bottom,
+  .premium-broker-page-hero-bottom {
+    font-size: 8px !important;
+    font-weight: 600 !important;
+  }
+
+  .footer-col h4 {
+    font-size: 8px !important;
+    font-weight: 600 !important;
+  }
+
+  .footer-bottom {
+    font-size: 8px !important;
+    font-weight: 500 !important;
+  }
+}
