@@ -8,24 +8,36 @@ export default function PropertyCard({
 }) {
   return (
     <article className="card premium-card">
+      {/* PROPERTY IMAGE */}
       <Link
         href={`/properties/${property.id}`}
         className="premium-card-image-wrap"
+        aria-label={`View ${property.name}`}
       >
         <img
           className="card-img premium-card-img"
           src={property.image}
           alt={property.name}
+          loading="lazy"
         />
 
+        {/* STATUS */}
         <div className="premium-card-status">
           {property.status}
         </div>
 
-        <div className="premium-card-arrow">↗</div>
+        {/* ARROW */}
+        <div
+          className="premium-card-arrow"
+          aria-hidden="true"
+        >
+          ↗
+        </div>
       </Link>
 
+      {/* PROPERTY INFORMATION */}
       <div className="card-body premium-card-body">
+
         <div className="premium-card-location">
           {property.location}
         </div>
@@ -38,13 +50,16 @@ export default function PropertyCard({
           <span>{property.price}</span>
         </div>
 
-        <Link
-          className="premium-card-link"
-          href={`/properties/${property.id}`}
-        >
-          View Property
-          <span>↗</span>
-        </Link>
+        <div className="premium-card-footer">
+          <Link
+            className="premium-card-link"
+            href={`/properties/${property.id}`}
+          >
+            <span>View Property</span>
+            <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
+
       </div>
     </article>
   );
