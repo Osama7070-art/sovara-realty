@@ -8019,3 +8019,424 @@ select {
     letter-spacing: -.055em;
   }
 }
+/* =========================================================
+   SOVARA — NAVBAR + FOOTER FINAL POLISH / STEP 12B
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   NAVBAR
+   --------------------------------------------------------- */
+
+.premium-nav {
+  background: #f7f6f2;
+  color: #171717;
+  border-bottom: 1px solid #dedcd5;
+}
+
+.premium-nav-inner {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.premium-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.sovara-logo-mark {
+  width: 46px !important;
+  height: 46px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #171717;
+}
+
+.sovara-mark {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sovara-wordmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #171717;
+  font-family: Arial, sans-serif;
+  font-size: 21px !important;
+  font-weight: 600;
+  line-height: .95;
+  letter-spacing: .19em !important;
+  white-space: nowrap;
+}
+
+.sovara-wordmark > span {
+  margin-top: 5px;
+  color: #777;
+  font-size: 9px !important;
+  font-weight: 500;
+  letter-spacing: .17em !important;
+}
+
+.premium-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+  padding-left: 50px;
+}
+
+.premium-nav-links a {
+  position: relative;
+  color: #444;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.premium-nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  height: 1px;
+  background: #171717;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .25s ease;
+}
+
+.premium-nav-links a:hover {
+  opacity: 1;
+}
+
+.premium-nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE MENU
+   --------------------------------------------------------- */
+
+.premium-mobile-menu {
+  display: none;
+}
+
+.premium-mobile-menu .mobile-menu {
+  min-height: 44px;
+  padding: 7px 0 7px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  background: transparent;
+  color: #171717;
+  cursor: pointer;
+}
+
+.premium-mobile-menu .mobile-menu > span:first-child {
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: .16em;
+}
+
+.menu-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.menu-icon-open {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.premium-mobile-panel {
+  position: absolute;
+  top: calc(100% + 1px);
+  right: 0;
+  width: min(330px, calc(100vw - 28px));
+  padding: 24px 26px 30px;
+  background: #f7f6f2;
+  border: 1px solid #d8d6cf;
+  box-shadow: 0 16px 45px rgba(23,23,23,.08);
+}
+
+.mobile-panel-label {
+  padding-bottom: 18px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #d8d6cf;
+  color: #777;
+  font-size: 8px;
+  letter-spacing: .17em;
+}
+
+.premium-mobile-panel a {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid #dedcd5;
+  color: #171717;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.premium-mobile-panel a:last-child {
+  border-bottom: 0;
+}
+
+.premium-mobile-panel a:active {
+  opacity: .55;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER — BASE
+   --------------------------------------------------------- */
+
+footer {
+  background: #171717;
+  color: #f7f6f2;
+}
+
+.footer {
+  background: #171717;
+  color: #f7f6f2;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  opacity: .65;
+}
+
+.footer .container {
+  width: min(1120px, calc(100% - 48px));
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER — PREMIUM OVERRIDES
+   --------------------------------------------------------- */
+
+.footer {
+  padding: 85px 0 28px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.25fr) minmax(160px, .45fr) minmax(160px, .45fr);
+  gap: 70px;
+  align-items: start;
+}
+
+.footer-brand {
+  max-width: 390px;
+}
+
+.footer-brand .logo {
+  color: #f7f6f2;
+}
+
+.footer-brand p {
+  max-width: 330px;
+  margin: 25px 0 0;
+  color: #aaa8a1;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.footer-col {
+  min-width: 0;
+}
+
+.footer-col h4 {
+  margin: 0 0 22px;
+  color: #88867f;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+.footer-col a {
+  display: block;
+  width: fit-content;
+  margin-bottom: 13px;
+  color: #e4e1d9;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  margin-top: 70px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(247,246,242,.16);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  color: #77756f;
+  font-size: 8px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.footer-bottom a {
+  color: #aaa8a1;
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER BRAND MARK ON DARK BACKGROUND
+   --------------------------------------------------------- */
+
+.footer .sovara-logo-mark {
+  color: #f7f6f2;
+}
+
+.footer .sovara-wordmark {
+  color: #f7f6f2;
+}
+
+.footer .sovara-wordmark > span {
+  color: #aaa8a1;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  /* NAV */
+
+  .premium-nav-inner {
+    min-height: 72px;
+    width: calc(100% - 28px);
+  }
+
+  .sovara-logo-mark {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .sovara-wordmark {
+    font-size: 19px !important;
+    letter-spacing: .17em !important;
+  }
+
+  .sovara-wordmark > span {
+    margin-top: 4px;
+    font-size: 8px !important;
+    letter-spacing: .16em !important;
+  }
+
+  .premium-nav-links {
+    display: none;
+  }
+
+  .premium-mobile-menu {
+    display: block;
+    position: relative;
+  }
+
+  .premium-mobile-panel {
+    right: 0;
+  }
+
+
+  /* FOOTER */
+
+  .footer {
+    padding: 65px 0 24px;
+  }
+
+  .footer-inner {
+    display: block;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-brand p {
+    max-width: 310px;
+    margin-top: 22px;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  .footer-col {
+    margin-top: 48px;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 18px;
+  }
+
+  .footer-col a {
+    margin-bottom: 12px;
+    font-size: 11px;
+  }
+
+  .footer-bottom {
+    margin-top: 55px;
+    padding-top: 18px;
+    display: block;
+    font-size: 7px;
+    line-height: 1.7;
+  }
+
+  .footer-bottom > * + * {
+    margin-top: 6px;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+
+  .premium-nav-inner {
+    width: calc(100% - 22px);
+  }
+
+  .sovara-logo-mark {
+    width: 39px !important;
+    height: 39px !important;
+  }
+
+  .sovara-wordmark {
+    font-size: 17px !important;
+  }
+
+  .premium-mobile-panel {
+    width: calc(100vw - 22px);
+  }
+}
