@@ -5,14 +5,15 @@ import PropertyCard from "../../components/PropertyCard";
 import { properties } from "../../data/properties";
 
 export default function Properties() {
-  const [filteredProperties, setFilteredProperties] = useState(
-    properties.filter(
-      (property) =>
-        property.status === "DEMO PROPERTY" ||
-        (property.listingStatus === "ACTIVE" &&
-          property.verificationStatus === "VERIFIED")
-    )
+  const publicProperties = properties.filter(
+    (property) =>
+      property.status === "DEMO PROPERTY" ||
+      (property.listingStatus === "ACTIVE" &&
+        property.verificationStatus === "VERIFIED")
   );
+
+  const [filteredProperties, setFilteredProperties] =
+    useState(publicProperties);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -22,13 +23,6 @@ export default function Properties() {
     const budget = params.get("budget") || "";
 
     const hasFilters = location || type || budget;
-
-    const publicProperties = properties.filter(
-      (property) =>
-        property.status === "DEMO PROPERTY" ||
-        (property.listingStatus === "ACTIVE" &&
-          property.verificationStatus === "VERIFIED")
-    );
 
     const filtered = publicProperties.filter((property) => {
       if (!hasFilters) return true;
@@ -56,10 +50,12 @@ export default function Properties() {
           budgetMatch = property.priceValue < 50;
         } else if (budget === "50-100") {
           budgetMatch =
-            property.priceValue >= 50 && property.priceValue < 100;
+            property.priceValue >= 50 &&
+            property.priceValue < 100;
         } else if (budget === "100-200") {
           budgetMatch =
-            property.priceValue >= 100 && property.priceValue < 200;
+            property.priceValue >= 100 &&
+            property.priceValue < 200;
         } else if (budget === "200-plus") {
           budgetMatch = property.priceValue >= 200;
         }
@@ -73,41 +69,79 @@ export default function Properties() {
 
   return (
     <>
-      <section className="properties-page-hero">
+      {/* =====================================================
+          PROPERTIES HERO
+          ===================================================== */}
+      <section className="properties-page-hero premium-properties-hero">
         <div className="container">
           <div className="properties-page-label">
             <span>01</span>
             <span>SOVARA REALTY</span>
+            <span>DELHI • NOIDA</span>
           </div>
 
-          <h1>
-            Selected
-            <br />
-            Properties.
-          </h1>
+          <div className="properties-hero-content">
+            <div className="eyebrow">
+              SELECTED OPPORTUNITIES
+            </div>
 
-          <div className="properties-page-intro">
+            <h1 className="serif">
+              Selected
+              <br />
+              <em>Properties.</em>
+            </h1>
+
             <p>
-              A considered selection of property opportunities.
-              Verified information will be added before public listing.
+              A considered selection of property opportunities
+              presented by SOVARA. Verified information is added
+              before public listing.
             </p>
+          </div>
+
+          <div className="properties-hero-bottom">
+            <span>DELHI • NOIDA</span>
+            <span>SELECTED PROPERTIES</span>
+            <span>
+              {filteredProperties.length
+                .toString()
+                .padStart(2, "0")}{" "}
+              OPPORTUNITIES
+            </span>
           </div>
         </div>
       </section>
 
-      <section className="properties-list-section">
+      {/* =====================================================
+          PROPERTY COLLECTION
+          ===================================================== */}
+      <section className="properties-list-section premium-properties-list">
         <div className="container">
-          <div className="properties-list-header">
+
+          <div className="properties-list-header premium-list-header">
             <div>
-              <div className="eyebrow">CURRENT SELECTION</div>
-              <h2>Explore Properties</h2>
+              <div className="eyebrow">
+                CURRENT SELECTION
+              </div>
+
+              <h2 className="serif">
+                Explore the
+                <br />
+                Collection.
+              </h2>
             </div>
 
-            <div className="properties-count">
-              {filteredProperties.length
-                .toString()
-                .padStart(2, "0")}{" "}
-              PROPERTIES
+            <div className="properties-list-intro">
+              <p>
+                SOVARA presents selected opportunities through
+                a focused and transparent property collection.
+              </p>
+
+              <div className="properties-count">
+                {filteredProperties.length
+                  .toString()
+                  .padStart(2, "0")}{" "}
+                PROPERTIES
+              </div>
             </div>
           </div>
 
@@ -121,8 +155,10 @@ export default function Properties() {
               ))}
             </div>
           ) : (
-            <div className="properties-empty">
-              <div className="properties-empty-number">00</div>
+            <div className="properties-empty premium-properties-empty">
+              <div className="properties-empty-number">
+                00
+              </div>
 
               <h3>No matching properties.</h3>
 
@@ -132,20 +168,68 @@ export default function Properties() {
               </p>
             </div>
           )}
+
         </div>
       </section>
 
-      <section className="properties-closing">
+      {/* =====================================================
+          LIST PROPERTY CTA
+          ===================================================== */}
+      <section className="properties-owner-cta">
         <div className="container">
-          <div className="eyebrow">SOVARA REALTY</div>
+          <div className="properties-owner-inner">
 
-          <h2>
+            <div className="eyebrow">
+              DEVELOPERS & PROPERTY OWNERS
+            </div>
+
+            <h2 className="serif">
+              Have a property
+              <br />
+              to <em>sell?</em>
+            </h2>
+
+            <p>
+              Share your property or project with SOVARA for
+              review and consideration.
+            </p>
+
+            <a
+              href="/list-your-property"
+              className="outline-link"
+            >
+              List Your Property <span>↗</span>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      {/* =====================================================
+          CLOSING
+          ===================================================== */}
+      <section className="properties-closing premium-properties-closing">
+        <div className="container">
+
+          <div className="eyebrow">
+            SOVARA REALTY
+          </div>
+
+          <h2 className="serif">
             The right property
             <br />
             begins with the right
             <br />
-            connection.
+            <em>connection.</em>
           </h2>
+
+          <a
+            href="/contact"
+            className="outline-link"
+          >
+            Speak With SOVARA <span>↗</span>
+          </a>
+
         </div>
       </section>
     </>
