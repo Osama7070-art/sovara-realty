@@ -15,7 +15,7 @@ export default function Home() {
         <div className="container hero-content premium-hero-content">
           <div className="hero-topline">
             <span>SOVARA REALTY</span>
-            <span>REAL ESTATE • INDIA</span>
+            <span>DELHI • NOIDA</span>
           </div>
 
           <div className="hero-copy">
@@ -47,84 +47,8 @@ export default function Home() {
           <div className="hero-bottom">
             <span>Selected Properties</span>
             <span>Independent Broker Network</span>
-            <span>Pan-India Vision</span>
+            <span>Delhi • Noida Focus</span>
           </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          PROPERTY DISCOVERY
-          ===================================================== */}
-      <section className="section premium-finder-section">
-        <div className="container">
-
-          <div className="finder-intro">
-            <div>
-              <div className="eyebrow">Property Discovery</div>
-
-              <h2 className="serif">
-                Find Your Next
-                <br />
-                Property.
-              </h2>
-            </div>
-
-            <p className="muted">
-              Explore selected property opportunities by location,
-              property type and budget.
-            </p>
-          </div>
-
-          <form
-            className="property-search premium-property-search"
-            action="/properties"
-            method="GET"
-          >
-            <div className="search-field">
-              <span>01</span>
-
-              <select name="location" defaultValue="">
-                <option value="">Location</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Noida">Noida</option>
-                <option value="Gurugram">Gurugram</option>
-                <option value="Mumbai">Mumbai</option>
-                <option value="Bengaluru">Bengaluru</option>
-              </select>
-            </div>
-
-            <div className="search-field">
-              <span>02</span>
-
-              <select name="type" defaultValue="">
-                <option value="">Property Type</option>
-                <option value="Apartment">Apartment</option>
-                <option value="Villa">Villa</option>
-                <option value="Plot">Plot</option>
-                <option value="Commercial">Commercial</option>
-              </select>
-            </div>
-
-            <div className="search-field">
-              <span>03</span>
-
-              <select name="budget" defaultValue="">
-                <option value="">Budget</option>
-                <option value="under-50">Under ₹50 Lakh</option>
-                <option value="50-100">₹50 Lakh – ₹1 Cr</option>
-                <option value="100-200">₹1 Cr – ₹2 Cr</option>
-                <option value="200-plus">₹2 Cr+</option>
-              </select>
-            </div>
-
-            <button
-              className="btn dark search-button"
-              type="submit"
-            >
-              Explore Properties <span>↗</span>
-            </button>
-          </form>
-
         </div>
       </section>
 
@@ -147,9 +71,9 @@ export default function Home() {
 
             <div className="section-side">
               <p className="muted">
-                Selected opportunities presented by SOVARA.
-                Verified property information will be added before
-                public listing.
+                Selected property opportunities presented by SOVARA.
+                Verified property information will be added before public
+                listing.
               </p>
 
               <Link className="outline-link" href="/properties">
@@ -159,10 +83,10 @@ export default function Home() {
           </div>
 
           <div className="grid premium-property-grid">
-            {properties.map((p) => (
+            {properties.map((property) => (
               <PropertyCard
-                key={p.id}
-                property={p}
+                key={property.id}
+                property={property}
               />
             ))}
           </div>
@@ -175,11 +99,10 @@ export default function Home() {
           ===================================================== */}
       <section className="premium-broker-section">
         <div className="container">
-
           <div className="broker-inner">
 
             <div className="broker-label">
-              <span>04</span>
+              <span>02</span>
               <span>FOR BROKERS</span>
             </div>
 
@@ -197,9 +120,8 @@ export default function Home() {
 
               <div className="broker-copy">
                 <p>
-                  Join the network, access selected properties, bring
-                  your clients and work with SOVARA through the
-                  transaction.
+                  Join the network, access selected properties, bring your
+                  clients and work with SOVARA through the transaction.
                 </p>
 
                 <Link className="btn light" href="/brokers">
@@ -208,9 +130,7 @@ export default function Home() {
               </div>
 
             </div>
-
           </div>
-
         </div>
       </section>
 
