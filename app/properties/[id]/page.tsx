@@ -11,8 +11,6 @@ export default async function PropertyDetail({
 
   if (!property) notFound();
 
-  // Demo properties remain visible for website presentation.
-  // Real properties require both ACTIVE listing status and VERIFIED information.
   const isPublic =
     property.status === "DEMO PROPERTY" ||
     (property.listingStatus === "ACTIVE" &&
@@ -22,131 +20,214 @@ export default async function PropertyDetail({
 
   return (
     <>
-      {/* PROPERTY INTRO */}
-      <section className="property-detail-intro">
+      {/* =====================================================
+          PROPERTY HERO
+          ===================================================== */}
+      <section className="premium-property-hero">
         <div className="container">
-          <div className="property-detail-topline">
+
+          <div className="premium-property-topline">
             <span>{property.status}</span>
             <span>SOVARA REALTY</span>
+            <span>PROPERTY {property.id}</span>
           </div>
 
-          <h1>{property.name}</h1>
+          <div className="premium-property-heading">
+            <div className="eyebrow">SELECTED OPPORTUNITY</div>
 
-          <p className="property-detail-location">
-            {property.location}
-          </p>
+            <h1 className="serif">
+              {property.name}
+            </h1>
+
+            <p>{property.location}</p>
+          </div>
+
         </div>
       </section>
 
-      {/* PROPERTY CONTENT */}
-      <section className="section property-detail-section">
-        <div className="container property-detail-layout">
+      {/* =====================================================
+          MAIN PROPERTY
+          ===================================================== */}
+      <section className="premium-property-main">
+        <div className="container">
 
-          {/* LEFT */}
-          <div className="property-detail-main">
+          <div className="premium-property-image-wrap">
+            <img
+              src={property.image}
+              alt={property.name}
+              className="premium-property-image"
+            />
 
-            <div className="property-detail-image-wrap">
-              <img
-                className="property-detail-image"
-                src={property.image}
-                alt={property.name}
-              />
-            </div>
-
-            <div className="property-detail-overview">
-              <div>
-                <span>Configuration</span>
-                <strong>{property.configuration}</strong>
-              </div>
-
-              <div>
-                <span>Area</span>
-                <strong>{property.area}</strong>
-              </div>
-
-              <div>
-                <span>Price</span>
-                <strong>{property.price}</strong>
-              </div>
-            </div>
-
-            <div className="property-detail-copy">
-              <div className="eyebrow">THE PROPERTY</div>
-
-              <h2>About the Property</h2>
-
-              <p>{property.description}</p>
-            </div>
-
-            <div className="property-detail-amenities">
-              <div className="eyebrow">FEATURES</div>
-
-              <h2>Amenities</h2>
-
-              <ul>
-                {property.amenities.map((amenity, index) => (
-                  <li key={index}>{amenity}</li>
-                ))}
-              </ul>
+            <div className="premium-property-image-label">
+              <span>SOVARA REALTY</span>
+              <span>{property.status}</span>
             </div>
           </div>
 
-          {/* RIGHT */}
-          <aside className="property-detail-sidebar">
+          {/* =================================================
+              OVERVIEW
+              ================================================= */}
+          <div className="premium-property-overview">
 
-            <div className="property-enquiry-box">
-
-              <div className="eyebrow">
-                PROPERTY INFORMATION
-              </div>
-
-              <h3>{property.name}</h3>
-
-              <div className="property-info-list">
-
-                <div>
-                  <span>Location</span>
-                  <strong>{property.location}</strong>
-                </div>
-
-                <div>
-                  <span>Developer</span>
-                  <strong>{property.developer}</strong>
-                </div>
-
-                <div>
-                  <span>Status</span>
-                  <strong>{property.status}</strong>
-                </div>
-
-              </div>
-
-              <div className="property-detail-actions">
-
-                <Link
-                  className="btn dark"
-                  href="/contact"
-                >
-                  Enquire Now
-                </Link>
-
-                <Link
-                  className="btn"
-                  href="/contact"
-                >
-                  Request Site Visit
-                </Link>
-
-              </div>
-
-              <p className="property-trust-note">
-                Property information is subject to verification
-                before public listing.
-              </p>
-
+            <div>
+              <span>CONFIGURATION</span>
+              <strong>{property.configuration}</strong>
             </div>
 
-          </aside>
+            <div>
+              <span>AREA</span>
+              <strong>{property.area}</strong>
+            </div>
+
+            <div>
+              <span>PRICE</span>
+              <strong>{property.price}</strong>
+            </div>
+
+          </div>
+
+          {/* =================================================
+              INFORMATION + ENQUIRY
+              ================================================= */}
+          <div className="premium-property-grid">
+
+            <main className="premium-property-content">
+
+              <div className="premium-property-block">
+                <div className="eyebrow">
+                  THE PROPERTY
+                </div>
+
+                <h2 className="serif">
+                  About the
+                  <br />
+                  Property.
+                </h2>
+
+                <p>
+                  {property.description}
+                </p>
+              </div>
+
+              <div className="premium-property-block premium-property-features">
+
+                <div className="eyebrow">
+                  FEATURES
+                </div>
+
+                <h2 className="serif">
+                  Amenities.
+                </h2>
+
+                <ul>
+                  {property.amenities.map((amenity, index) => (
+                    <li key={index}>
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                      <strong>{amenity}</strong>
+                    </li>
+                  ))}
+                </ul>
+
+              </div>
+
+            </main>
+
+            {/* =================================================
+                ENQUIRY PANEL
+                ================================================= */}
+            <aside className="premium-property-sidebar">
+
+              <div className="premium-property-panel">
+
+                <div className="eyebrow">
+                  PROPERTY INFORMATION
+                </div>
+
+                <h3 className="serif">
+                  {property.name}
+                </h3>
+
+                <div className="premium-property-info">
+
+                  <div>
+                    <span>Location</span>
+                    <strong>{property.location}</strong>
+                  </div>
+
+                  <div>
+                    <span>Developer</span>
+                    <strong>{property.developer}</strong>
+                  </div>
+
+                  <div>
+                    <span>Status</span>
+                    <strong>{property.status}</strong>
+                  </div>
+
+                </div>
+
+                <div className="premium-property-actions">
+
+                  <Link
+                    href="/contact"
+                    className="btn dark"
+                  >
+                    Enquire Now
+                    <span>↗</span>
+                  </Link>
+
+                  <Link
+                    href="/contact"
+                    className="btn"
+                  >
+                    Request Site Visit
+                    <span>↗</span>
+                  </Link>
+
+                </div>
+
+                <div className="premium-property-note">
+                  Property information is subject to verification
+                  before public listing.
+                </div>
+
+              </div>
+
+            </aside>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* =====================================================
+          FINAL CTA
+          ===================================================== */}
+      <section className="premium-property-closing">
+        <div className="container">
+
+          <div className="eyebrow">
+            SOVARA REALTY
+          </div>
+
+          <h2 className="serif">
+            Interested in this
+            <br />
+            <em>property?</em>
+          </h2>
+
+          <p>
+            Speak with SOVARA for property information,
+            enquiries or a site visit.
+          </p>
+
+          <Link
+            href="/contact"
+            className="outline-link"
+          >
+            Speak With SOVARA <span>↗</span>
+          </Link>
+
         </div>
       </section>
     </>
