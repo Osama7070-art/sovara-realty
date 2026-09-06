@@ -2876,3 +2876,21 @@
   }
 
 }
+/* =====================================================
+   SOVARA — MOBILE MENU ABOVE ALL CONTENT
+   ===================================================== */
+
+.premium-nav {
+  position: relative;
+  z-index: 1000;
+}
+
+.premium-mobile-menu {
+  position: absolute;
+  z-index: 1100;
+}
+
+.premium-mobile-panel {
+  position: absolute;
+  z-index: 1200;
+}
