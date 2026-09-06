@@ -8910,3 +8910,200 @@ footer {
     font-size: 44px;
   }
 }
+/* =========================================================
+   SOVARA — MOBILE NAVIGATION FIX
+   STEP 12C-FIX
+   ========================================================= */
+
+/* Normal desktop */
+.premium-mobile-menu {
+  display: none;
+}
+
+
+/* ---------------------------------------------------------
+   REAL MOBILE + TABLET
+   --------------------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+
+  .premium-nav {
+    --nav-height: 70px;
+    height: var(--nav-height) !important;
+  }
+
+  .premium-nav-inner {
+    position: relative;
+    width: calc(100% - 28px) !important;
+    min-height: 70px;
+    height: 70px;
+  }
+
+  /* Hide desktop navigation */
+  .premium-nav-links {
+    display: none !important;
+  }
+
+  /* Show mobile menu */
+  .premium-mobile-menu {
+    display: block !important;
+    position: relative;
+    flex-shrink: 0;
+    margin-left: auto;
+    z-index: 10000;
+  }
+
+  /* Keep logo on left */
+  .premium-logo {
+    position: static !important;
+    transform: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sovara-logo-mark {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .sovara-wordmark {
+    font-size: 19px !important;
+    letter-spacing: .17em !important;
+  }
+
+  .sovara-wordmark > span {
+    font-size: 8px !important;
+    letter-spacing: .16em !important;
+  }
+
+  /* Menu button */
+  .premium-mobile-menu .mobile-menu {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 44px;
+    padding: 8px 0 8px 12px;
+    border: 0;
+    background: transparent;
+    color: #171717;
+    cursor: pointer;
+  }
+
+  .premium-mobile-menu .mobile-menu > span:first-child {
+    font-size: 8px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+  }
+
+  .menu-icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 19px !important;
+    line-height: 1;
+  }
+
+  /* React state controls whether panel exists.
+     Therefore we do NOT use [open] here. */
+  .premium-mobile-panel {
+    position: fixed !important;
+    top: var(--nav-height) !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    max-height: calc(100vh - var(--nav-height));
+    overflow-y: auto;
+
+    display: grid !important;
+    gap: 0;
+
+    padding: 24px 28px 30px !important;
+
+    background: #f7f6f2;
+    border-top: 1px solid #d9d7d0;
+    border-bottom: 1px solid #d9d7d0;
+
+    box-shadow: 0 18px 35px rgba(0,0,0,.08);
+
+    z-index: 99999;
+  }
+
+  .premium-mobile-panel a {
+    display: block;
+    padding: 18px 0;
+    border-bottom: 1px solid #d9d7d0;
+    color: #171717;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  .premium-mobile-panel a:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   TOUCH DEVICES / CHROME MOBILE
+   --------------------------------------------------------- */
+
+@media (hover: none) and (pointer: coarse) {
+
+  .premium-nav {
+    --nav-height: 70px;
+  }
+
+  .premium-nav-links {
+    display: none !important;
+  }
+
+  .premium-mobile-menu {
+    display: block !important;
+  }
+
+  .premium-mobile-menu .mobile-menu {
+    display: inline-flex !important;
+  }
+
+  .premium-mobile-panel {
+    position: fixed !important;
+    top: 70px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   SMALL PHONES
+   --------------------------------------------------------- */
+
+@media screen and (max-width: 380px) {
+
+  .premium-nav-inner {
+    width: calc(100% - 22px) !important;
+  }
+
+  .sovara-logo-mark {
+    width: 39px !important;
+    height: 39px !important;
+  }
+
+  .sovara-wordmark {
+    font-size: 17px !important;
+  }
+
+  .premium-mobile-panel {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+}
