@@ -10916,3 +10916,64 @@ footer {
     font-size: 12px;
   }
 }
+/* =========================================================
+   SOVARA — BRAND TYPOGRAPHY / STEP 13B-2
+   ========================================================= */
+
+/* Primary brand typography */
+body {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+}
+
+/* Editorial / luxury headings */
+.serif,
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-playfair), Georgia, "Times New Roman", serif;
+}
+
+/* Navigation, buttons and interface text */
+.nav-links,
+.mobile-menu,
+.btn,
+.outline-link,
+.hero-text-link,
+.eyebrow,
+.properties-page-label,
+.premium-property-topline,
+.premium-broker-page-label,
+.premium-listing-label,
+.premium-about-label,
+.premium-contact-label,
+.premium-card-status,
+.premium-card-location,
+.premium-card-meta,
+.premium-card-link,
+.broker-label,
+.footer-col h4,
+.footer-col a {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+}
+
+/* Keep body copy clean and readable */
+p,
+input,
+textarea,
+select,
+button {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+}
+
+/* SOVARA wordmark remains intentionally refined */
+.sovara-wordmark {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+}
+
+/* Stronger editorial emphasis */
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
