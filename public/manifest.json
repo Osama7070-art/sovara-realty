@@ -1,0 +1,32 @@
+{
+  "background_color": "#ffffff",
+  "description": "SOVARA REALTY connects selected property opportunities with developers, property owners, independent brokers and buyers across India.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "SOVARA REALTY",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "SOVARA",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://sovara-realty.vercel.app/icon?07456b4a78e9c0b2",
+      "type": "image/png",
+      "sizes": "512x512",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 512,
+      "is512x512": true,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "Sovara-realty",
+  "lang": "en",
+  "categories": [
+    "business"
+  ]
+}
