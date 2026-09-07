@@ -162,9 +162,21 @@ export default async function PropertyDetail({
                 <div className="premium-property-info">
 
                   <div>
-                    <span>Location</span>
-                    <strong>{property.location}</strong>
-                  </div>
+  <span>Location</span>
+  <strong>
+    {[
+      property.locality,
+      property.city,
+      property.state,
+    ]
+      .filter(
+        (value) =>
+          value &&
+          value !== "[PLACEHOLDER — TO BE PROVIDED]"
+      )
+      .join(" · ")}
+  </strong>
+</div>
 
                   <div>
                     <span>Developer</span>
