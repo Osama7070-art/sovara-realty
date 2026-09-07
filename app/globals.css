@@ -9507,3 +9507,287 @@ footer {
     font-size: 8px !important;
   }
 }
+/* =========================================================
+   SOVARA — PROPERTY DETAILS MOBILE AUDIT / STEP 12E
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  /* -------------------------------------------------------
+     PROPERTY DETAIL HERO
+     ------------------------------------------------------- */
+
+  .premium-property-hero {
+    padding: 48px 0 0;
+  }
+
+  .premium-property-hero .container {
+    min-height: 425px;
+  }
+
+  .premium-property-topline {
+    padding-bottom: 18px;
+    font-size: 9px;
+    font-weight: 600;
+  }
+
+  .premium-property-topline span:last-child {
+    display: none;
+  }
+
+  .premium-property-heading {
+    max-width: 100%;
+    padding: 72px 0 52px;
+  }
+
+  .premium-property-heading .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .premium-property-heading h1 {
+    max-width: 100%;
+    font-size: clamp(52px, 14vw, 70px);
+    line-height: .9;
+    letter-spacing: -.055em;
+  }
+
+  .premium-property-heading p {
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+
+  /* -------------------------------------------------------
+     MAIN PROPERTY IMAGE
+     ------------------------------------------------------- */
+
+  .premium-property-main {
+    padding-bottom: 88px;
+  }
+
+  .premium-property-image-wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1.05;
+  }
+
+  .premium-property-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .premium-property-image-label {
+    left: 13px;
+    right: 13px;
+    bottom: 13px;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: .13em;
+  }
+
+
+  /* -------------------------------------------------------
+     PROPERTY OVERVIEW
+     ------------------------------------------------------- */
+
+  .premium-property-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .premium-property-overview > div,
+  .premium-property-overview > div:not(:first-child) {
+    padding: 18px 0;
+    border-right: 0;
+    border-bottom: 1px solid #d1cfc8;
+  }
+
+  .premium-property-overview > div:last-child {
+    border-bottom: 0;
+  }
+
+  .premium-property-overview span {
+    margin-bottom: 7px;
+    font-size: 9px;
+    font-weight: 600;
+  }
+
+  .premium-property-overview strong {
+    font-size: 20px;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTENT + SIDEBAR
+     ------------------------------------------------------- */
+
+  .premium-property-grid {
+    display: block;
+    padding-top: 72px;
+  }
+
+  .premium-property-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .premium-property-block {
+    max-width: 100%;
+  }
+
+  .premium-property-block + .premium-property-block {
+    margin-top: 72px;
+  }
+
+  .premium-property-block .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .premium-property-block h2 {
+    max-width: 100%;
+    margin-bottom: 24px;
+    font-size: clamp(45px, 13vw, 62px);
+    line-height: .93;
+  }
+
+  .premium-property-block p {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+
+  /* -------------------------------------------------------
+     HIGHLIGHTS / AMENITIES
+     ------------------------------------------------------- */
+
+  .premium-property-features ul {
+    width: 100%;
+  }
+
+  .premium-property-features li {
+    grid-template-columns: 42px minmax(0, 1fr);
+    min-height: 58px;
+  }
+
+  .premium-property-features li span {
+    font-size: 9px;
+    font-weight: 600;
+  }
+
+  .premium-property-features li strong {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+
+  /* -------------------------------------------------------
+     ENQUIRY PANEL
+     ------------------------------------------------------- */
+
+  .premium-property-sidebar {
+    width: 100%;
+    margin-top: 72px;
+  }
+
+  .premium-property-panel {
+    position: static;
+    width: 100%;
+    padding: 28px 22px;
+  }
+
+  .premium-property-panel .eyebrow {
+    margin-bottom: 20px;
+    font-size: 9px;
+  }
+
+  .premium-property-panel h3 {
+    margin-bottom: 28px;
+    font-size: 31px;
+    line-height: 1;
+  }
+
+  .premium-property-info > div {
+    padding: 16px 0;
+  }
+
+  .premium-property-info span {
+    margin-bottom: 7px;
+    font-size: 8px;
+    font-weight: 600;
+  }
+
+  .premium-property-info strong {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .premium-property-actions {
+    margin-top: 25px;
+    gap: 9px;
+  }
+
+  .premium-property-actions .btn {
+    width: 100%;
+    min-height: 56px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .premium-property-note {
+    margin-top: 22px;
+    padding-top: 18px;
+    font-size: 10px;
+    line-height: 1.7;
+  }
+
+
+  /* -------------------------------------------------------
+     CLOSING SECTION
+     ------------------------------------------------------- */
+
+  .premium-property-closing {
+    padding: 88px 0 98px;
+  }
+
+  .premium-property-closing .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-property-closing h2 {
+    max-width: 100%;
+    margin-bottom: 30px;
+    font-size: clamp(47px, 13vw, 64px);
+    line-height: .94;
+  }
+
+  .premium-property-closing p {
+    max-width: 350px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+
+  .premium-property-heading h1 {
+    font-size: 50px;
+  }
+
+  .premium-property-block h2 {
+    font-size: 44px;
+  }
+
+  .premium-property-panel h3 {
+    font-size: 28px;
+  }
+
+  .premium-property-closing h2 {
+    font-size: 44px;
+  }
+}
