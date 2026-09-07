@@ -9791,3 +9791,366 @@ footer {
     font-size: 44px;
   }
 }
+/* =========================================================
+   SOVARA — FOR BROKERS MOBILE AUDIT / STEP 12F
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  /* -------------------------------------------------------
+     BROKER HERO
+     ------------------------------------------------------- */
+
+  .premium-broker-page-hero {
+    padding: 48px 0 0;
+  }
+
+  .premium-broker-page-hero .container {
+    min-height: 570px;
+  }
+
+  .premium-broker-page-label {
+    padding-bottom: 18px;
+    font-size: 9px;
+    font-weight: 600;
+  }
+
+  .premium-broker-page-label span:nth-child(2) {
+    display: none;
+  }
+
+  .premium-broker-page-heading {
+    max-width: 100%;
+    padding: 76px 0 52px;
+  }
+
+  .premium-broker-page-heading .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .premium-broker-page-heading h1 {
+    max-width: 100%;
+    font-size: clamp(53px, 14.5vw, 72px);
+    line-height: .89;
+    letter-spacing: -.06em;
+  }
+
+  .premium-broker-page-heading p {
+    max-width: 355px;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-broker-page-hero-bottom {
+    padding: 16px 0 19px;
+  }
+
+  .premium-broker-page-hero-bottom span {
+    font-size: 9px;
+    font-weight: 600;
+  }
+
+  .premium-broker-page-hero-bottom span:nth-child(2) {
+    display: none;
+  }
+
+
+  /* -------------------------------------------------------
+     OPPORTUNITY
+     ------------------------------------------------------- */
+
+  .premium-broker-intro {
+    padding: 84px 0 94px;
+  }
+
+  .premium-broker-intro-grid {
+    display: block;
+  }
+
+  .premium-broker-intro-side {
+    margin-bottom: 30px;
+  }
+
+  .premium-broker-intro-content h2 {
+    max-width: 100%;
+    font-size: clamp(48px, 13.5vw, 66px);
+    line-height: .93;
+  }
+
+  .premium-broker-intro-content p {
+    max-width: 355px;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-broker-intro-content p + p {
+    margin-top: 20px;
+  }
+
+
+  /* -------------------------------------------------------
+     PROCESS
+     ------------------------------------------------------- */
+
+  .premium-broker-process {
+    padding: 88px 0 96px;
+  }
+
+  .premium-broker-process-heading {
+    display: block;
+  }
+
+  .premium-broker-process-heading .eyebrow {
+    margin-bottom: 30px;
+  }
+
+  .premium-broker-process-heading h2 {
+    max-width: 100%;
+    font-size: clamp(48px, 13.5vw, 66px);
+    line-height: .93;
+  }
+
+  .premium-broker-process-steps {
+    display: block;
+    margin-top: 58px;
+  }
+
+  .premium-broker-process-step {
+    min-height: 0;
+    padding: 22px 0 28px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(247,246,242,.22);
+  }
+
+  .premium-broker-process-step + .premium-broker-process-step {
+    padding-left: 0;
+  }
+
+  .premium-broker-process-step:last-child {
+    border-bottom: 0;
+  }
+
+  .premium-broker-process-step h3 {
+    max-width: 340px;
+    margin: 29px 0 12px;
+    font-size: 23px;
+    line-height: 1.12;
+  }
+
+  .premium-broker-process-step p {
+    max-width: 355px;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+
+  /* -------------------------------------------------------
+     BENEFITS
+     ------------------------------------------------------- */
+
+  .premium-broker-benefits {
+    padding: 90px 0 100px;
+  }
+
+  .premium-broker-benefits-grid {
+    display: block;
+  }
+
+  .premium-broker-benefits-heading .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-broker-benefits-heading h2 {
+    max-width: 100%;
+    font-size: clamp(50px, 14vw, 68px);
+    line-height: .93;
+  }
+
+  .premium-broker-benefits-list {
+    margin-top: 55px;
+  }
+
+  .premium-broker-benefits-list > div {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 15px;
+    padding: 22px 0 25px;
+  }
+
+  .premium-broker-benefits-list h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 1.1;
+  }
+
+  .premium-broker-benefits-list p {
+    max-width: 355px;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+
+  /* -------------------------------------------------------
+     BROKER APPLICATION
+     ------------------------------------------------------- */
+
+  .premium-broker-application {
+    padding: 88px 0 100px;
+  }
+
+  .premium-broker-application-grid {
+    display: block;
+  }
+
+  .premium-broker-application-copy {
+    position: static;
+  }
+
+  .premium-broker-application-copy h2 {
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: clamp(48px, 13vw, 64px);
+    line-height: .93;
+  }
+
+  .premium-broker-application-copy > p {
+    max-width: 355px;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-broker-application-notes {
+    max-width: 100%;
+    margin-top: 45px;
+  }
+
+  .premium-broker-application-notes > div {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 14px;
+    padding: 17px 0;
+  }
+
+  .premium-broker-application-notes p {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .premium-broker-form-wrap {
+    margin-top: 68px;
+  }
+
+  .premium-broker-form {
+    margin-top: 22px;
+  }
+
+  .premium-broker-field {
+    grid-template-columns: 38px minmax(0, 1fr);
+    min-height: 68px;
+  }
+
+  .premium-broker-field > span {
+    font-size: 9px;
+    font-weight: 600;
+  }
+
+  .premium-broker-field input,
+  .premium-broker-field textarea {
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  .premium-broker-field textarea {
+    min-height: 125px;
+  }
+
+  .premium-broker-submit {
+    width: 100%;
+    min-height: 56px;
+    margin-top: 22px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+
+  /* -------------------------------------------------------
+     TRANSPARENCY
+     ------------------------------------------------------- */
+
+  .premium-broker-transparency {
+    padding: 88px 0 100px;
+  }
+
+  .premium-broker-transparency > .container > .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-broker-transparency h2 {
+    max-width: 100%;
+    font-size: clamp(50px, 14vw, 68px);
+    line-height: .93;
+  }
+
+  .premium-broker-transparency-copy {
+    display: block;
+    max-width: 100%;
+    margin: 42px 0 0;
+  }
+
+  .premium-broker-transparency-copy p {
+    max-width: 355px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .premium-broker-transparency-copy p + p {
+    margin-top: 22px;
+  }
+
+
+  /* -------------------------------------------------------
+     CLOSING
+     ------------------------------------------------------- */
+
+  .premium-broker-closing {
+    padding: 88px 0 100px;
+  }
+
+  .premium-broker-closing .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .premium-broker-closing h2 {
+    max-width: 100%;
+    font-size: clamp(48px, 13vw, 64px);
+    line-height: .94;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL PHONES
+   --------------------------------------------------------- */
+
+@media (max-width: 380px) {
+
+  .premium-broker-page-heading h1 {
+    font-size: 51px;
+  }
+
+  .premium-broker-intro-content h2,
+  .premium-broker-process-heading h2 {
+    font-size: 45px;
+  }
+
+  .premium-broker-benefits-heading h2,
+  .premium-broker-transparency h2,
+  .premium-broker-closing h2 {
+    font-size: 45px;
+  }
+
+  .premium-broker-application-copy h2 {
+    font-size: 44px;
+  }
+}
