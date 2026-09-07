@@ -5,9 +5,6 @@ import { properties } from "../data/properties";
 export default function Home() {
   return (
     <>
-      {/* =====================================================
-          HERO
-          ===================================================== */}
       <section className="hero premium-hero">
         <div className="hero-bg" />
         <div className="hero-overlay" />
@@ -15,7 +12,7 @@ export default function Home() {
         <div className="container hero-content premium-hero-content">
           <div className="hero-topline">
             <span>SOVARA REALTY</span>
-            <span>DELHI • NOIDA</span>
+            <span>PAN-INDIA</span>
           </div>
 
           <div className="hero-copy">
@@ -47,17 +44,13 @@ export default function Home() {
           <div className="hero-bottom">
             <span>Selected Properties</span>
             <span>Independent Broker Network</span>
-            <span>Delhi • Noida Focus</span>
+            <span>Across India</span>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          FEATURED PROPERTIES
-          ===================================================== */}
       <section className="section premium-properties-section">
         <div className="container">
-
           <div className="section-head premium-section-head">
             <div>
               <div className="eyebrow">Selected Opportunities</div>
@@ -84,30 +77,21 @@ export default function Home() {
 
           <div className="grid premium-property-grid">
             {properties.map((property) => (
-              <PropertyCard
-                key={property.id}
-                property={property}
-              />
+              <PropertyCard key={property.id} property={property} />
             ))}
           </div>
-
         </div>
       </section>
 
-      {/* =====================================================
-          BROKER CTA
-          ===================================================== */}
       <section className="premium-broker-section">
         <div className="container">
           <div className="broker-inner">
-
             <div className="broker-label">
               <span>02</span>
               <span>FOR BROKERS</span>
             </div>
 
             <div className="broker-content">
-
               <div>
                 <div className="eyebrow">Build With SOVARA</div>
 
@@ -128,18 +112,13 @@ export default function Home() {
                   Become a Partner <span>↗</span>
                 </Link>
               </div>
-
             </div>
           </div>
         </div>
       </section>
 
-      {/* =====================================================
-          FINAL STATEMENT
-          ===================================================== */}
       <section className="premium-closing-section">
         <div className="container">
-
           <div className="eyebrow">SOVARA REALTY</div>
 
           <h2 className="serif">
@@ -151,7 +130,6 @@ export default function Home() {
           <Link className="outline-link" href="/contact">
             Speak With SOVARA <span>↗</span>
           </Link>
-
         </div>
       </section>
     </>
