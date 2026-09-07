@@ -39,7 +39,19 @@ export default async function PropertyDetail({
               {property.name}
             </h1>
 
-            <p>{property.location}</p>
+            <p>
+  {[
+    property.locality,
+    property.city,
+    property.state,
+  ]
+    .filter(
+      (value) =>
+        value &&
+        value !== "[PLACEHOLDER — TO BE PROVIDED]"
+    )
+    .join(" · ")}
+</p>
           </div>
 
         </div>
