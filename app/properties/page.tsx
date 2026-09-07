@@ -27,13 +27,24 @@ export default function Properties() {
     const filtered = publicProperties.filter((property) => {
       if (!hasFilters) return true;
 
-      const locationMatch =
-        !location ||
-        (property.location &&
-          property.location !== "[PLACEHOLDER — TO BE PROVIDED]" &&
-          property.location
-            .toLowerCase()
-            .includes(location.toLowerCase()));
+      const searchLocation = location.toLowerCase().trim();
+
+const locationMatch =
+  !searchLocation ||
+  [
+    property.location,
+    property.locality,
+    property.city,
+    property.state,
+  ]
+    .filter(
+      (value) =>
+        value &&
+        value !== "[PLACEHOLDER — TO BE PROVIDED]"
+    )
+    .some((value) =>
+      value.toLowerCase().includes(searchLocation)
+    );
 
       const typeMatch =
         !type ||
