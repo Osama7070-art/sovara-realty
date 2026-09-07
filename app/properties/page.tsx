@@ -77,7 +77,7 @@ export default function Properties() {
           <div className="properties-page-label">
             <span>01</span>
             <span>SOVARA REALTY</span>
-            <span>DELHI • NOIDA</span>
+            <span>PAN-INDIA</span>
           </div>
 
           <div className="properties-hero-content">
@@ -99,7 +99,7 @@ export default function Properties() {
           </div>
 
           <div className="properties-hero-bottom">
-            <span>DELHI • NOIDA</span>
+            <span>ACROSS INDIA</span>
             <span>SELECTED PROPERTIES</span>
             <span>
               {filteredProperties.length
@@ -116,7 +116,6 @@ export default function Properties() {
           ===================================================== */}
       <section className="properties-list-section premium-properties-list">
         <div className="container">
-
           <div className="properties-list-header premium-list-header">
             <div>
               <div className="eyebrow">
@@ -168,7 +167,6 @@ export default function Properties() {
               </p>
             </div>
           )}
-
         </div>
       </section>
 
@@ -178,7 +176,6 @@ export default function Properties() {
       <section className="properties-owner-cta">
         <div className="container">
           <div className="properties-owner-inner">
-
             <div className="eyebrow">
               DEVELOPERS & PROPERTY OWNERS
             </div>
@@ -200,7 +197,6 @@ export default function Properties() {
             >
               List Your Property <span>↗</span>
             </a>
-
           </div>
         </div>
       </section>
@@ -210,7 +206,6 @@ export default function Properties() {
           ===================================================== */}
       <section className="properties-closing premium-properties-closing">
         <div className="container">
-
           <div className="eyebrow">
             SOVARA REALTY
           </div>
@@ -229,7 +224,6 @@ export default function Properties() {
           >
             Speak With SOVARA <span>↗</span>
           </a>
-
         </div>
       </section>
     </>
