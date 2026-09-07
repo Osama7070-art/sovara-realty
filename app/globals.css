@@ -10977,3 +10977,140 @@ h2,
 h3 {
   font-weight: 400;
 }
+/* =========================================================
+   SOVARA — BRAND COLORS / STEP 13C
+   ========================================================= */
+
+:root {
+  --sovara-black: #171717;
+  --sovara-ivory: #f7f6f2;
+  --sovara-stone: #eeece6;
+  --sovara-gold: #c5a56d;
+  --sovara-gold-soft: #d4b98f;
+  --sovara-text-muted: #6f6d67;
+  --sovara-border: #d4d1c9;
+}
+
+/* ---------------------------------------------------------
+   SOVARA GOLD ACCENT
+   --------------------------------------------------------- */
+
+.sovara-wordmark span,
+.premium-broker-section h2 em,
+.premium-broker-closing h2 em,
+.premium-listing-closing h2 em,
+.premium-properties-closing h2 em,
+.premium-property-closing h2 em,
+.premium-contact-closing h2 em,
+.premium-about-closing h2 em {
+  color: var(--sovara-gold);
+}
+
+/* Keep editorial italic text subtle where appropriate */
+.premium-hero h1 em,
+.premium-section-head h2 em,
+.premium-card-body em {
+  color: var(--sovara-gold);
+}
+
+/* ---------------------------------------------------------
+   GOLD DETAILS
+   --------------------------------------------------------- */
+
+.hero-text-link span,
+.outline-link span,
+.premium-card-arrow,
+.premium-card-link span,
+.premium-broker-section .btn span,
+.premium-property-actions .btn span {
+  color: var(--sovara-gold);
+}
+
+/* ---------------------------------------------------------
+   DARK SECTIONS
+   --------------------------------------------------------- */
+
+.premium-broker-section,
+.premium-broker-process,
+.premium-broker-closing {
+  background: var(--sovara-black);
+}
+
+/* ---------------------------------------------------------
+   MAIN LIGHT SURFACES
+   --------------------------------------------------------- */
+
+.premium-hero,
+.premium-properties-hero,
+.premium-property-hero,
+.premium-about-hero,
+.premium-contact-hero,
+.premium-broker-page-hero,
+.premium-listing-hero {
+  background: var(--sovara-ivory);
+}
+
+/* ---------------------------------------------------------
+   SOFT STONE SECTIONS
+   --------------------------------------------------------- */
+
+.premium-properties-section,
+.premium-properties-list,
+.premium-property-main,
+.premium-broker-intro,
+.premium-broker-application,
+.premium-listing-intro,
+.premium-listing-application {
+  background: var(--sovara-stone);
+}
+
+/* ---------------------------------------------------------
+   PREMIUM BORDERS
+   --------------------------------------------------------- */
+
+.premium-nav,
+.premium-card-meta,
+.premium-properties-empty,
+.premium-property-overview,
+.premium-broker-benefits-list,
+.premium-listing-form,
+.premium-contact-form {
+  border-color: var(--sovara-border);
+}
+
+/* ---------------------------------------------------------
+   GOLD FOCUS STATES
+   --------------------------------------------------------- */
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--sovara-gold);
+}
+
+/* ---------------------------------------------------------
+   GOLD BUTTON ACCENT — ONLY WHERE ALREADY DARK
+   --------------------------------------------------------- */
+
+.premium-broker-submit:hover,
+.premium-listing-submit:hover,
+.premium-contact-submit:hover {
+  border-color: var(--sovara-gold);
+}
+
+/* ---------------------------------------------------------
+   MOBILE — KEEP GOLD RESTRAINED
+   --------------------------------------------------------- */
+
+@media (max-width: 760px) {
+  .sovara-wordmark span,
+  .premium-broker-section h2 em,
+  .premium-broker-closing h2 em,
+  .premium-listing-closing h2 em,
+  .premium-properties-closing h2 em,
+  .premium-property-closing h2 em,
+  .premium-contact-closing h2 em,
+  .premium-about-closing h2 em {
+    color: var(--sovara-gold);
+  }
+}
