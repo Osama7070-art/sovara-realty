@@ -55,6 +55,15 @@ export default function RootLayout({
       className={`${playfair.variable} ${montserrat.variable}`}
     >
       <body>
+        <Script id="service-worker-register" strategy="afterInteractive">
+  {`
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/sw.js");
+      });
+    }
+  `}
+</Script>
         <Navbar />
         <main>{children}</main>
         <Footer />
