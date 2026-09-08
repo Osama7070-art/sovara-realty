@@ -22,6 +22,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+    manifest: "/manifest.json",
   title: {
     default: "SOVARA REALTY | Exceptional Properties. Trusted Connections.",
     template: "%s | SOVARA REALTY",
